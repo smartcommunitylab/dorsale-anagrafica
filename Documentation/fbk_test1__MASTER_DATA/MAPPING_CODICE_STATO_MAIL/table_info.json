@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "MAPPING_CODICE_STATO_MAIL",
+  "table_full_name": "fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL",
+  "table_version": "1.0",
+  "table_definition": "SELECT  DISTINCT codice_stato_mail,\n        CASE codice_stato_mail\n            WHEN 'I' THEN 'Inserita'\n            WHEN 'C' THEN 'Cancellata'\n            WHEN 'A' THEN 'Attivata'\n            WHEN 'U' THEN 'Gestita dall''Utente'\n            WHEN 'B' THEN 'Bloccata'\n            ELSE ''\n        END AS descrizione_stato_mail\nFROM fbk_test1__CORE_DATASET.S1P_MAIL",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_MAIL"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_MAIL"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

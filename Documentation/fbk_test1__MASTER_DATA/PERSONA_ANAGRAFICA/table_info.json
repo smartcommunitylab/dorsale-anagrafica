@@ -1,0 +1,24 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_ANAGRAFICA",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  *,\n        CASE\n            WHEN eta <= 19 THEN '18-19'\n            WHEN eta >= 20 AND eta < 30 THEN '20-29'\n            WHEN eta >= 30 AND eta < 40 THEN '30-39'\n            WHEN eta >= 40 AND eta < 50 THEN '40-49'\n            WHEN eta >= 50 AND eta < 60 THEN '50-59'\n            WHEN eta >= 60 THEN '60+'\n            ELSE ''\n        END AS range_eta\nFROM (    \n    SELECT  t1.*,\n            CAST(FLOOR(TIMESTAMPDIFF(DAY, data_nascita, CURRENT_DATE)/365.25) AS INT) AS eta\n    FROM (    \n        SELECT  *\n        FROM    fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_S1P\n        UNION\n        SELECT  *\n        FROM    fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE\n        UNION\n        SELECT  *\n        FROM    fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA\n    ) t1\n)",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA",
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE",
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_S1P"
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.PERSONA_ANAGRAFICA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

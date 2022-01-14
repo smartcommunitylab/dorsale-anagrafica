@@ -1,0 +1,58 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_TIPO_ORARIO",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_TIPO_ORARIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(C_SPEVEN AS INT) AS codice_orario, X_SPEVEN AS descrizione_tipo_orario, CAST(DI_SPEVEN AS DATE) AS data_inizio_tipo_orario, CAST(DF_SPEVEN AS DATE) AS data_fine_tipo_orario\n  FROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_tipo_orario.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_ORARIO"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_orario",
+        "description": "Codice orario",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_tipo_orario",
+        "description": "Descrizione tipo orario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_tipo_orario",
+        "description": "Data inizio tipo orario",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_tipo_orario",
+        "description": "Data fine tipo orario",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

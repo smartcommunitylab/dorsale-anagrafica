@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_CATEGORIA_ORARIO",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_CATEGORIA_ORARIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT  matricola_estesa,\n        CAST(data_inizio_assegnazione_categoria_orario AS TIMESTAMP) AS data_inizio_assegnazione_categoria_orario, \n        CAST(data_fine_assegnazione_categoria_orario AS TIMESTAMP) AS data_fine_assegnazione_categoria_orario,  \n        CAST(data_inserimento_categoria_orario AS TIMESTAMP) AS data_inserimento_categoria_orario, \n        CAST(data_applicazione_categoria_orario AS TIMESTAMP) AS data_applicazione_categoria_orario,\n        tipo_assegnazione_orario, \n        codice_categoria_orario\nFROM    fbk_test1__MASTER_DATA.PERSONA_CATEGORIA_ORARIO",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_CATEGORIA_ORARIO"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "categoria_orario",
+  "dss_endpoint": "/categoria-orario",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

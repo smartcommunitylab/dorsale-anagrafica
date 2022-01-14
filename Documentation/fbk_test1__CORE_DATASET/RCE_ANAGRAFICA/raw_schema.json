@@ -1,0 +1,76 @@
+{
+  "fields": [
+    {
+      "name": "matricola",
+      "description": "Matricola",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "cognome",
+      "description": "Cognome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "nome",
+      "description": "Nome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_nascita",
+      "description": "Data nascita",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_fiscale",
+      "description": "Codice fiscale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_struttura",
+      "description": "Codice struttura",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_struttura",
+      "description": "Descrizione struttura",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_assegnazione_iag",
+      "description": "Data inizio assegnazione iag",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_assegnazione_iag",
+      "description": "Data fine assegnazione iag",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

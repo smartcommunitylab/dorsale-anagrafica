@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "codice_ente",
+      "description": "Codice ente",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_ente",
+      "description": "Descrizione ente",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

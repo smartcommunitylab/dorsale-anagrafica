@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_SERVIZIO_ASSEGNATO",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_SERVIZIO_ASSEGNATO",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(\"id\", 1, 1, 0) AS id, TO_DATE(\"data_primo_inserimento\", 'YYYY-MM-DD', 1) AS data_primo_inserimento, TO_DATE(\"data_ultima_modifica\", 'YYYY-MM-DD', 1) AS data_ultima_modifica, COALESCE(TO_DATE(\"data_fine\", 'YYYY-MM-DD', 1), DATE '2999-12-31') AS data_fine_assegnazione_servizio, TO_DATE(\"data_inizio\", 'YYYY-MM-DD', 1) AS data_inizio_assegnazione_servizio, note, CONVERT_TO_INTEGER(\"linea_id\", 1, 1, 0) AS linea_id, CONVERT_TO_INTEGER(servizio_id, 1, 1, 0) AS servizio_id\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_servizio_assegnato.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

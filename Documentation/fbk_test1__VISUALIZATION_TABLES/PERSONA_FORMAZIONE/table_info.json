@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_FORMAZIONE",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_FORMAZIONE",
+  "table_version": "1.0",
+  "table_definition": "SELECT matricola_estesa, codice_corso, descrizione_corso, ambito_formativo, quantita_ore_corso, CAST(data_inizio_formazione AS TIMESTAMP) AS data_inizio_formazione,\nCAST(data_fine_formazione AS TIMESTAMP) AS data_fine_formazione, numero_crediti_corso, tipologia_corso, tipologia_partecipazione\nFROM fbk_test1__MASTER_DATA.PERSONA_FORMAZIONE",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_FORMAZIONE"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "formazione",
+  "dss_endpoint": "/formazione",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

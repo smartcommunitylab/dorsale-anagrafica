@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_SERVIZIO",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_SERVIZIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(\"fonia_servizio.csv\".\"id\", 1, 1, 0) AS id, descrizione AS descrizione_servizio, CONVERT_TO_FLOAT(\"fonia_servizio.csv\".\"canone\", 1, 1, 0) AS canone_servizio, codice AS codice_servizio, CONVERT_TO_INTEGER(CASE\n  WHEN CASE\n  WHEN gratuito = 'false' THEN '0'\n  ELSE gratuito\nEND = 'true' THEN '1'\n  ELSE CASE\n  WHEN gratuito = 'false' THEN '0'\n  ELSE gratuito\nEND\nEND, 1, 1, 0) AS servizio_is_gratuito, tipo_canone as tipo_canone_servizio, CONVERT_TO_INTEGER(contratto_id, 1, 1, 0) AS contratto_id\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_servizio.csv\" AS \"fonia_servizio.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

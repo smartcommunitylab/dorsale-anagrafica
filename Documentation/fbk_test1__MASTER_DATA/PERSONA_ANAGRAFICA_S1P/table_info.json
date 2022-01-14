@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_ANAGRAFICA_S1P",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_S1P",
+  "table_version": "1.0",
+  "table_definition": "SELECT  CONCAT(prefisso_matricola, matricola) as matricola_estesa,\n        CAST(matricola AS INT) AS matricola,\n        cognome, \n        nome, \n        data_nascita,\n        codice_fiscale, \n        sesso, \n        codice_cittadino,\n        's1p' AS provenienza\nFROM    fbk_test1__CORE_DATASET.S1P_ANAGRAFICA t1\nLEFT JOIN   fbk_test1__MASTER_DATA.MAPPING_ENTE t2 ON t1.codice_ente = t2.codice_ente",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_ANAGRAFICA",
+    "fbk_test1__MASTER_DATA.MAPPING_ENTE"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

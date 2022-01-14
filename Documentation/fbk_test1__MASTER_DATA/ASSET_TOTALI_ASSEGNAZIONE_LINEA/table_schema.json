@@ -1,0 +1,108 @@
+{
+  "fields": [
+    {
+      "name": "id_assegnazione_linea",
+      "description": "Id assegnazione linea",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_assegnazione_linea",
+      "description": "Data inizio assegnazione linea",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_assegnazione_linea",
+      "description": "Data fine assegnazione linea",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "linea_is_personale",
+      "description": "Linea is personale",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "causale_ritiro",
+      "description": "Causale ritiro",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_struttura_fonia",
+      "description": "Codice struttura fonia",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola",
+      "description": "Matricola",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola_estesa",
+      "description": "Matricola estesa",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_fiscale",
+      "description": "Codice fiscale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_gruppo",
+      "description": "Descrizione gruppo",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_tipologia_linea",
+      "description": "Descrizione tipologia linea",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "id_struttura",
+      "description": "Id struttura",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "linea_id",
+      "description": "Linea id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

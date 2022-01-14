@@ -1,0 +1,76 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "description": "Id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_primo_inserimento",
+      "description": "Data primo inserimento",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_ultima_modifica",
+      "description": "Data ultima modifica",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_spedizione",
+      "description": "Data fine spedizione",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_spedizione",
+      "description": "Data inizio spedizione",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "note_spedizione",
+      "description": "Note spedizione",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "peso_spedizione",
+      "description": "Peso spedizione",
+      "type": "number",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "destinatario_id",
+      "description": "Destinatario id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "richiesta_reintegro",
+      "description": "Richiesta reintegro",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_CONTRATTO",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_CONTRATTO",
+  "table_version": "1.0",
+  "table_definition": "SELECT matricola_estesa, CAST(data_inizio_rapporto AS TIMESTAMP) AS data_inizio_rapporto, \nCAST(data_fine_rapporto AS TIMESTAMP) AS data_fine_rapporto, \nCAST(data_inserimento_rapporto AS TIMESTAMP) AS data_inserimento_rapporto, \nCAST(data_applicazione_rapporto AS TIMESTAMP) AS data_applicazione_rapporto, tipo_rapporto, codice_area_contrattuale_rapporto, descrizione_area_contrattuale_rapporto\nFROM fbk_test1__MASTER_DATA.PERSONA_CONTRATTO",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_CONTRATTO"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "contratto",
+  "dss_endpoint": "/rapporto",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_rapporto",
+        "description": "Data inizio rapporto",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_rapporto",
+        "description": "Data fine rapporto",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inserimento_rapporto",
+        "description": "Data inserimento rapporto",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_applicazione_rapporto",
+        "description": "Data applicazione rapporto",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_rapporto",
+        "description": "Tipo rapporto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_area_contrattuale_rapporto",
+        "description": "Codice area contrattuale rapporto",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_area_contrattuale_rapporto",
+        "description": "Descrizione area contrattuale rapporto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

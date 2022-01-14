@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "GSUITE_SPAZIO_UTILIZZATO",
+  "table_full_name": "fbk_test1__CORE_DATASET.GSUITE_SPAZIO_UTILIZZATO",
+  "table_version": "1.0",
+  "table_definition": "SELECT mail_istituzionale, CONVERT_TO_FLOAT(spazio_mail_utilizzato, 1, 1, 0) AS gsuite_spazio_mail_utilizzato_gb, CONVERT_TO_FLOAT(spazio_drive_utilizzato, 1, 1, 0) AS gsuite_spazio_drive_utilizzato_gb, CONVERT_TO_FLOAT(spazio_totale, 1, 1, 0) AS gsuite_spazio_totale_gb\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.GSUITE.space.\"gsuite_spazio_utilizzato.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_SPAZIO_UTILIZZATO"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "GSUITE",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

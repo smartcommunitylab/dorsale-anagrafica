@@ -1,0 +1,84 @@
+{
+  "fields": [
+    {
+      "name": "matricola_estesa",
+      "description": "Matricola estesa",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_validita_mail",
+      "description": "Data inizio validita mail",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_validita_mail",
+      "description": "Data fine validita mail",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "mail_istituzionale",
+      "description": "Mail istituzionale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_stato_mail",
+      "description": "Codice stato mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_stato_mail",
+      "description": "Descrizione stato mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_tipologia_mail",
+      "description": "Codice tipologia mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_tipologia_mail",
+      "description": "Descrizione tipologia mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "indicatore_backup_mail",
+      "description": "Indicatore backup mail",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "scelta_invio_comunicazioni",
+      "description": "Scelta invio comunicazioni",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "fields": [
+    {
+      "name": "matricola_estesa",
+      "description": "Matricola estesa",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_rapporto",
+      "description": "Data inizio rapporto",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_rapporto",
+      "description": "Data fine rapporto",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inserimento_rapporto",
+      "description": "Data inserimento rapporto",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_applicazione_rapporto",
+      "description": "Data applicazione rapporto",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "tipo_rapporto",
+      "description": "Tipo rapporto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_area_contrattuale_rapporto",
+      "description": "Codice area contrattuale rapporto",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_area_contrattuale_rapporto",
+      "description": "Descrizione area contrattuale rapporto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

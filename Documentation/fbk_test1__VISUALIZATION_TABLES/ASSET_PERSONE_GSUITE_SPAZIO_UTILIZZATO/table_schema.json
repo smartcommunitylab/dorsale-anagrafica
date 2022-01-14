@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+      "name": "mail_istituzionale",
+      "description": "Mail istituzionale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_spazio_mail_utilizzato_gb",
+      "description": "Gsuite spazio mail utilizzato gb",
+      "type": "number",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_spazio_drive_utilizzato_gb",
+      "description": "Gsuite spazio drive utilizzato gb",
+      "type": "number",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_spazio_totale_gb",
+      "description": "Gsuite spazio totale gb",
+      "type": "number",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

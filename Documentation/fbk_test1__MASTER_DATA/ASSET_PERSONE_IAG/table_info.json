@@ -1,0 +1,24 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "ASSET_PERSONE_IAG",
+  "table_full_name": "fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG",
+  "table_version": "1.0",
+  "table_definition": "SELECT  codice_identificativo_igi,\n        nome,\n        cognome,\n        codice_fiscale,\n        data_nascita,\n        codice_area_contrattuale,\n        descrizione_area_contrattuale,\n        matricola,\n        codice_cittadino,\n        applicazione,\n        t1.account,\n        disabilitato,\n        data_disabilitazione,\n        permesso,\n        diritto,\n        matricola_estesa,\n        codice_applicazione,\n        descrizione_applicazione,\n        t2.account as tipologia_account,\n        profilo,\n        gestione\nFROM (\n    SELECT  *,\n            CONCAT('PR', matricola) AS matricola_estesa\n    FROM    fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_PAT\n    UNION\n    SELECT  *,\n            CONCAT('ES', matricola) AS matricola_estesa\n    FROM    fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_CONSULENTI\n) t1\nINNER JOIN fbk_test1__CORE_DATASET.IAG_APPLICAZIONI AS t2 ON t1.applicazione = t2.codice_applicazione",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.IAG_APPLICAZIONI",
+    "fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_CONSULENTI",
+    "fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_PAT"
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_IAG"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

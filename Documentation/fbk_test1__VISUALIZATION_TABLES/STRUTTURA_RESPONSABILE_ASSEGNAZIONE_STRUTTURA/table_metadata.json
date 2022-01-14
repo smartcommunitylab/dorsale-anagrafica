@@ -1,0 +1,74 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "STRUTTURA_RESPONSABILE_ASSEGNAZIONE_STRUTTURA",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.STRUTTURA_RESPONSABILE_ASSEGNAZIONE_STRUTTURA",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_struttura, incarico_funzionale, CAST(data_inizio_responsabile AS TIMESTAMP) AS data_inizio_responsabile, CAST(data_fine_responsabile AS TIMESTAMP) AS data_fine_responsabile, matricola_estesa, id_struttura\nFROM fbk_test1__MASTER_DATA.STRUTTURA_RESPONSABILE_ASSEGNAZIONE_STRUTTURA",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.STRUTTURA_RESPONSABILE_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_struttura",
+        "description": "Codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "incarico_funzionale",
+        "description": "Incarico funzionale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_responsabile",
+        "description": "Data inizio responsabile",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_responsabile",
+        "description": "Data fine responsabile",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

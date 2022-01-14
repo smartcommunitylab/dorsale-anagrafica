@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "REMEDY_PC",
+  "table_full_name": "fbk_test1__CORE_DATASET.REMEDY_PC",
+  "table_version": "1.0",
+  "table_definition": "SELECT CID AS pdl_id, AID AS aid, STATO AS pdl_stato, \"COD. SOGG.\" AS pdl_codice_soggetto, CASE WHEN regexp_like(\"COD. SOGGETTO\", '.*?^0001.*?') THEN regexp_replace(\"COD. SOGGETTO\", '^0001', '') ELSE \"COD. SOGGETTO\" END AS pdl_codice_struttura, \"DESC. SOGGETTO\" AS pdl_descrizione_soggetto, \"DESC. STRUTTURA\" AS pdl_descrizione_struttura, DIPARTIMENTO AS pdl_dipartimento_appartenenza, CAP AS pdl_cap, LOCALITA AS pdl_localita, INDIRIZZO AS pdl_indirizzo, UBICAZIONE AS pdl_ubicazione, PIANO AS pdl_piano, STANZA AS pdl_stanza, COGNOME AS pdl_cognome, NOME AS pdl_nome, \"MATR.\" AS matricola, TO_DATE(\"remedy_pc.csv\".\"DATA INSTALL.\", 'DD/MM/YYYY', 1) AS pdl_data_installazione, TO_DATE(\"remedy_pc.csv\".\"DATA. ACQUISTO\", 'DD/MM/YYYY', 1) AS pdl_data_acquisto, TIPO_PDL AS pdl_tipo, PRODUTTORE AS pdl_produttore, MODELLO AS pdl_modello, PROPRIETARIO AS pdl_proprietario, '' AS pdl_desktop_management, FLEET AS pdl_fleet, SCAD_FLEET AS pdl_scadenza_fleet, \"SISTEMA OPERATIVO\" AS pdl_sistema_operativo\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.REMEDY.\"remedy_pc.csv\" AS \"remedy_pc.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_REMEDY_PC"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "REMEDY",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

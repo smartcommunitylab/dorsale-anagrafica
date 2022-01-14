@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "GSUITE_MAIL",
+  "table_full_name": "fbk_test1__CORE_DATASET.GSUITE_MAIL",
+  "table_version": "1.0",
+  "table_definition": "SELECT mail_istituzionale, data_aggregazione_mail as gsuite_data_aggregazione_mail, CAST(FLOOR(mail_inviate) as INTEGER) AS gsuite_mail_inviate, CAST(FLOOR(mail_ricevute) as INTEGER) AS gsuite_mail_ricevute\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.GSUITE.mail.\"gsuite_mail.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_MAIL"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "GSUITE",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

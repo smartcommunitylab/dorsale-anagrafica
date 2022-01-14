@@ -1,0 +1,25 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_MAIL",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_MAIL",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        CONCAT(t2.prefisso_matricola, CAST(t1.matricola AS VARCHAR)) as matricola_estesa,\n        t3.descrizione_stato_mail,\n        t4.descrizione_tipologia_mail\nFROM    fbk_test1__CORE_DATASET.S1P_MAIL t1\nLEFT JOIN   fbk_test1__MASTER_DATA.MAPPING_ENTE t2 ON t1.codice_ente = t2.codice_ente\nLEFT JOIN   fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL t3 ON t1.codice_stato_mail = t3.codice_stato_mail\nLEFT JOIN   fbk_test1__MASTER_DATA.MAPPING_CODICE_TIPOLOGIA_MAIL t4 ON t1.codice_tipologia_mail = t4.codice_tipologia_mail\n",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_MAIL",
+    "fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL",
+    "fbk_test1__MASTER_DATA.MAPPING_CODICE_TIPOLOGIA_MAIL",
+    "fbk_test1__MASTER_DATA.MAPPING_ENTE"
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.PERSONA_MAIL"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

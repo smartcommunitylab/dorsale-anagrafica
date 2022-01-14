@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_QUALIFICA",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_QUALIFICA",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_ente, matricola, data_inizio_qualifica, COALESCE(data_fine_qualifica, DATE '2999-12-31') AS data_fine_qualifica, codice_qualifica, descrizione_qualifica, codice_livello_giuridico, descrizione_livello_giuridico, data_inserimento_qualifica, data_applicazione_qualifica\nFROM (\n  SELECT CAST(FLOOR(\"s1ps_dorsale_qualifica.xlsx\".C_ENTE) AS INTEGER) AS codice_ente, CAST(FLOOR(\"s1ps_dorsale_qualifica.xlsx\".C_MATRI) AS INTEGER) AS matricola, CAST(\"s1ps_dorsale_qualifica.xlsx\".DI_STAGIU AS DATE) AS data_inizio_qualifica, CAST(\"s1ps_dorsale_qualifica.xlsx\".DF_STAGIU AS DATE) AS data_fine_qualifica, C_QUALIF AS codice_qualifica, X_QUALIF AS descrizione_qualifica, C_LIVELLO AS codice_livello_giuridico, X_LIVELLO AS descrizione_livello_giuridico, CAST(\"s1ps_dorsale_qualifica.xlsx\".TS_INSERIM AS DATE) AS data_inserimento_qualifica, CAST(\"s1ps_dorsale_qualifica.xlsx\".TS_APPLICA AS DATE) AS data_applicazione_qualifica\n  FROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_qualifica.xlsx\" AS \"s1ps_dorsale_qualifica.xlsx\"\n) nested_0",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_QUALIFICA"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_GSUITE_LISTA_UTENTI",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_LISTA_UTENTI",
+  "table_version": "1.0",
+  "table_definition": "SELECT mail_istituzionale, mail_istituzionale_2, mail_istituzionale_3, mail_istituzionale_4, mail_istituzionale_5, mail_istituzionale_6, CAST(gsuite_data_creazione_utente as TIMESTAMP) AS gsuite_data_creazione_utente, gsuite_ultimo_login, gsuite_cognome, gsuite_nome, gsuite_org_unit_path, gsuite_sospeso\nFROM fbk_test1__CORE_DATASET.GSUITE_LISTA_UTENTI",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.GSUITE_LISTA_UTENTI"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "gsuite_utenti",
+  "dss_endpoint": "/gsuite-utenti",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

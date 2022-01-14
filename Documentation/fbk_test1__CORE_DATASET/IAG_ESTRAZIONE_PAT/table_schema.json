@@ -1,0 +1,124 @@
+{
+  "fields": [
+    {
+      "name": "codice_identificativo_igi",
+      "description": "Codice identificativo igi",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "nome",
+      "description": "Nome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "cognome",
+      "description": "Cognome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_fiscale",
+      "description": "Codice fiscale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_nascita",
+      "description": "Data nascita",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_area_contrattuale",
+      "description": "Codice area contrattuale",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_area_contrattuale",
+      "description": "Descrizione area contrattuale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola",
+      "description": "Matricola",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_cittadino",
+      "description": "Codice cittadino",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "applicazione",
+      "description": "Applicazione",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "account",
+      "description": "Account",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "disabilitato",
+      "description": "Disabilitato",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_disabilitazione",
+      "description": "Data disabilitazione",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "permesso",
+      "description": "Permesso",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "diritto",
+      "description": "Diritto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

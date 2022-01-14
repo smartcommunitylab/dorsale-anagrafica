@@ -1,0 +1,83 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_LINEA",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_LINEA",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(id, 1, 1, 0) AS id, numero_telefono, stato as stato_linea, CONVERT_TO_INTEGER(contratto_id, 1, 1, 0) AS contratto_id, CONVERT_TO_INTEGER(tipologia_id, 1, 1, 0) AS tipologia_id, TO_DATE(data_primo_inserimento, 'YYYY-MM-DD', 1) AS data_primo_inserimento, TO_DATE(data_ultima_modifica, 'YYYY-MM-DD', 1) AS data_ultima_modifica\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_linea.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "id",
+        "description": "Id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "numero_telefono",
+        "description": "Numero telefono",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "stato_linea",
+        "description": "Stato linea",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "contratto_id",
+        "description": "Contratto id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipologia_id",
+        "description": "Tipologia id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_primo_inserimento",
+        "description": "Data primo inserimento",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_ultima_modifica",
+        "description": "Data ultima modifica",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

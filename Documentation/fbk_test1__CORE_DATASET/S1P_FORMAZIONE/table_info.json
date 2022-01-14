@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_FORMAZIONE",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_FORMAZIONE",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(C_ENTE AS INT) AS codice_ente, CAST(C_MATRI AS INT) AS matricola, C_CORSO AS codice_corso, Z_DESCCORSO AS descrizione_corso, Z_AMBITO_FORMATIVO AS ambito_formativo, CONVERT_TO_FLOAT(Q_ORE, 1, 1, 0) AS quantita_ore_corso, TO_DATE(DI_FORMA, 'YYYY-MM-DD', 1) AS data_inizio_formazione, TO_DATE(DF_FORMA, 'YYYY-MM-DD', 1) AS data_fine_formazione, CONVERT_TO_FLOAT(C_CREDITI, 1, 1, 0) AS numero_crediti_corso, DESC_CORSO AS tipologia_corso, F_TIPO_PARTC AS tipologia_partecipazione\n  FROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_formazione1.csv\"\nUNION\nSELECT CAST(C_ENTE AS INT) AS codice_ente, CAST(C_MATRI AS INT) AS matricola, C_CORSO AS codice_corso, Z_DESCCORSO AS descrizione_corso, Z_AMBITO_FORMATIVO AS ambito_formativo, CONVERT_TO_FLOAT(Q_ORE, 1, 1, 0) AS quantita_ore_corso, TO_DATE(DI_FORMA, 'YYYY-MM-DD', 1) AS data_inizio_formazione, TO_DATE(DF_FORMA, 'YYYY-MM-DD', 1) AS data_fine_formazione, CONVERT_TO_FLOAT(C_CREDITI, 1, 1, 0) AS numero_crediti_corso, DESC_CORSO AS tipologia_corso, F_TIPO_PARTC AS tipologia_partecipazione\n  FROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_formazione2.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_FORMAZIONE"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

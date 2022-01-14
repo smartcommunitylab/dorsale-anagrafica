@@ -1,0 +1,100 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "description": "Id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_primo_inserimento",
+      "description": "Data primo inserimento",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_ultima_modifica",
+      "description": "Data ultima modifica",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_assegnazione_linea",
+      "description": "Data fine assegnazione linea",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_assegnazione_linea",
+      "description": "Data inizio assegnazione linea",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "linea_is_personale",
+      "description": "Linea is personale",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gruppo_id",
+      "description": "Gruppo id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "persona_id",
+      "description": "Persona id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "struttura_id",
+      "description": "Struttura id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "causale_ritiro",
+      "description": "Causale ritiro",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "linea_id",
+      "description": "Linea id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "tipologia_id",
+      "description": "Tipologia id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

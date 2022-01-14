@@ -1,0 +1,194 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_IAG",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_IAG",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_identificativo_igi, nome, cognome, codice_fiscale, CAST(data_nascita AS TIMESTAMP) AS data_nascita, codice_area_contrattuale, descrizione_area_contrattuale, matricola, codice_cittadino, applicazione, account, disabilitato, CAST(data_disabilitazione AS TIMESTAMP) AS data_disabilitazione, permesso, diritto, matricola_estesa, codice_applicazione, descrizione_applicazione, tipologia_account, profilo, gestione\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "iag",
+  "dss_endpoint": "/iag",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_identificativo_igi",
+        "description": "Codice identificativo igi",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "nome",
+        "description": "Nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "cognome",
+        "description": "Cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_fiscale",
+        "description": "Codice fiscale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_nascita",
+        "description": "Data nascita",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_area_contrattuale",
+        "description": "Codice area contrattuale",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_area_contrattuale",
+        "description": "Descrizione area contrattuale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_cittadino",
+        "description": "Codice cittadino",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "applicazione",
+        "description": "Applicazione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "account",
+        "description": "Account",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "disabilitato",
+        "description": "Disabilitato",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_disabilitazione",
+        "description": "Data disabilitazione",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "permesso",
+        "description": "Permesso",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "diritto",
+        "description": "Diritto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_applicazione",
+        "description": "Codice applicazione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_applicazione",
+        "description": "Descrizione applicazione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipologia_account",
+        "description": "Tipologia account",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "profilo",
+        "description": "Profilo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gestione",
+        "description": "Gestione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

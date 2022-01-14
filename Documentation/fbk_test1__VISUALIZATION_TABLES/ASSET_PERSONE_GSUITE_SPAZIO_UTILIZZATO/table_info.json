@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_GSUITE_SPAZIO_UTILIZZATO",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_SPAZIO_UTILIZZATO",
+  "table_version": "1.0",
+  "table_definition": "SELECT mail_istituzionale, gsuite_spazio_mail_utilizzato_gb, gsuite_spazio_drive_utilizzato_gb, gsuite_spazio_totale_gb\nFROM fbk_test1__CORE_DATASET.GSUITE_SPAZIO_UTILIZZATO",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.GSUITE_SPAZIO_UTILIZZATO"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "gsuite_drive",
+  "dss_endpoint": "/gsuite-drive",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

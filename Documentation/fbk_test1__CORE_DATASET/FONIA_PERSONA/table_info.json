@@ -1,0 +1,26 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_PERSONA",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_PERSONA",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(id, 1, 1, 0) AS id, codice_fiscale, cognome, mail, matricola, nome, CONVERT_TO_INTEGER(struttura_id, 1, 1, 0) AS struttura_id,  provenienza\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_persona.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA",
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_TERMINALE",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_LINEA",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_TERMINALE",
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

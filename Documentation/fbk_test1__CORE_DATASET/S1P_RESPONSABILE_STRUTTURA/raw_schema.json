@@ -1,0 +1,52 @@
+{
+  "fields": [
+    {
+      "name": "codice_struttura",
+      "description": "Codice struttura",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_ente",
+      "description": "Codice ente",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola",
+      "description": "Matricola",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "incarico_funzionale",
+      "description": "Incarico funzionale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_responsabile",
+      "description": "Data inizio responsabile",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_responsabile",
+      "description": "Data fine responsabile",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "GSUITE_MEET",
+  "table_full_name": "fbk_test1__CORE_DATASET.GSUITE_MEET",
+  "table_version": "1.0",
+  "table_definition": "SELECT DATE_TRUNC('day', Data) AS gsuite_data_meet, \"Codice riunione\" AS gsuite_codice_meet, \"Identificatore partecipante\" AS gsuite_mail_istituzionale, CAST(FLOOR(CONVERT_TO_FLOAT(\"meet\".\"Durata\", 1, 1, 0)) AS INTEGER) AS gsuite_durata_meet, Paese AS gsuite_paese, CAST(FLOOR(CONVERT_TO_FLOAT(\"meet\".\"Larghezza di banda per il caricamento in kbps prevista\", 1, 1, 0)) AS INTEGER) AS larghezza_banda_caricamento_kbps, CAST(FLOOR(CONVERT_TO_FLOAT(\"meet\".\"Larghezza di banda per il download in kbps prevista\", 1, 1, 0)) AS INTEGER) AS larghezza_banda_download_kbps\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.GSUITE.meet AS meet",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_GSUITE_MEET"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "GSUITE",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

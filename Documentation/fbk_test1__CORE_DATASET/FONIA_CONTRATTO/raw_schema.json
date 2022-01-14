@@ -1,0 +1,84 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "description": "Id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_primo_inserimento",
+      "description": "Data primo inserimento",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_ultima_modifica",
+      "description": "Data ultima modifica",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_contratto",
+      "description": "Data fine contratto",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_contratto",
+      "description": "Data inizio contratto",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_riferimento_contratto",
+      "description": "Codice riferimento contratto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_contratto",
+      "description": "Descrizione contratto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "operatore",
+      "description": "Operatore",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "referente_contratto",
+      "description": "Referente contratto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "ricaricabile",
+      "description": "Ricaricabile",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

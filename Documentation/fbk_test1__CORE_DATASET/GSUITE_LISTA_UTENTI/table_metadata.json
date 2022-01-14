@@ -1,0 +1,122 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "GSUITE_LISTA_UTENTI",
+  "table_full_name": "fbk_test1__CORE_DATASET.GSUITE_LISTA_UTENTI",
+  "table_version": "1.0",
+  "table_definition": "SELECT  \"primaryEmail\" AS mail_istituzionale,\n        \"aliases.0\" AS mail_istituzionale_2,\n        \"aliases.1\" AS mail_istituzionale_3,\n        \"aliases.2\" AS mail_istituzionale_4,\n        \"aliases.3\" AS mail_istituzionale_5,\n        \"aliases.4\" AS mail_istituzionale_6,\n        cast(TO_TIMESTAMP(\"creationTime\", 'YYYY-MM-DD\"T\"HH24:MI:SS.FFFTZO', 1) as date) AS gsuite_data_creazione_utente,\n        TO_TIMESTAMP(CASE WHEN \"lastLoginTime\" = 'Never' THEN NULL ELSE \"lastLoginTime\" END, 'YYYY-MM-DD\"T\"HH24:MI:SS.FFFTZO', 1) AS gsuite_ultimo_login,\n        \"name.familyName\" AS gsuite_cognome,\n        \"name.givenName\" AS gsuite_nome,\n        \"orgUnitPath\" AS gsuite_org_unit_path,\n        cast(CASE WHEN \"suspended\" = 'True'  THEN '1' ELSE '0' END as int) AS gsuite_sospeso\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.GSUITE.\"user\".\"gsuite_utenti.csv\"\n",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_LISTA_UTENTI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "GSUITE",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "mail_istituzionale",
+        "description": "Mail istituzionale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "mail_istituzionale_2",
+        "description": "Mail istituzionale 2",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "mail_istituzionale_3",
+        "description": "Mail istituzionale 3",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "mail_istituzionale_4",
+        "description": "Mail istituzionale 4",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "mail_istituzionale_5",
+        "description": "Mail istituzionale 5",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "mail_istituzionale_6",
+        "description": "Mail istituzionale 6",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_data_creazione_utente",
+        "description": "Gsuite data creazione utente",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_ultimo_login",
+        "description": "Gsuite ultimo login",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_cognome",
+        "description": "Gsuite cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_nome",
+        "description": "Gsuite nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_org_unit_path",
+        "description": "Gsuite org unit path",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_sospeso",
+        "description": "Gsuite sospeso",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "fields": [
+    {
+      "name": "mail_istituzionale",
+      "description": "Mail istituzionale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "mail_istituzionale_2",
+      "description": "Mail istituzionale 2",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "mail_istituzionale_3",
+      "description": "Mail istituzionale 3",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "mail_istituzionale_4",
+      "description": "Mail istituzionale 4",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "mail_istituzionale_5",
+      "description": "Mail istituzionale 5",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "mail_istituzionale_6",
+      "description": "Mail istituzionale 6",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_data_creazione_utente",
+      "description": "Gsuite data creazione utente",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_ultimo_login",
+      "description": "Gsuite ultimo login",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_cognome",
+      "description": "Gsuite cognome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_nome",
+      "description": "Gsuite nome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_org_unit_path",
+      "description": "Gsuite org unit path",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_sospeso",
+      "description": "Gsuite sospeso",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

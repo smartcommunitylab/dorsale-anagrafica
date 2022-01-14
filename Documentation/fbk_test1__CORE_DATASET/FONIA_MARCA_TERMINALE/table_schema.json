@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "description": "Id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_marca_terminale",
+      "description": "Descrizione marca terminale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

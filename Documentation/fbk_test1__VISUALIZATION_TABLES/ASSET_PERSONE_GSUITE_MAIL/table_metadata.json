@@ -1,0 +1,58 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_GSUITE_MAIL",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_MAIL",
+  "table_version": "1.0",
+  "table_definition": "SELECT mail_istituzionale, gsuite_data_aggregazione_mail, gsuite_mail_inviate, gsuite_mail_ricevute\nFROM fbk_test1__CORE_DATASET.GSUITE_MAIL",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.GSUITE_MAIL"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "gsuite_mail",
+  "dss_endpoint": "/gsuite-mail",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "mail_istituzionale",
+        "description": "Mail istituzionale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_data_aggregazione_mail",
+        "description": "Gsuite data aggregazione mail",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_mail_inviate",
+        "description": "Gsuite mail inviate",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "gsuite_mail_ricevute",
+        "description": "Gsuite mail ricevute",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

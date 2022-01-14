@@ -1,0 +1,112 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_ASSEGNAZIONE_STRUTTURA",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        t2.id_struttura\n        -- data_inizio_assegnazione_struttura,\n        -- data_fine_assegnazione_struttura,\n        -- data_inizio_struttura,\n        -- data_fine_struttura,\n        -- livello_struttura_superiore\nFROM    fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_S1P t1\nLEFT JOIN fbk_test1__MASTER_DATA.STRUTTURA_BASE t2\n    ON\n        t1.codice_struttura = t2.codice_struttura AND\n        -- EXAMPLE:\n        -- TIMEFRAME durata struttura                I|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|F\n        --  TF assegnazione 1                                 ia1|*******************|fa1                         (ia1 >= I) AND      (fa1 <= F)\n        --  TF assegnazione 2                                                     ia2|*************|fa2      (I <= ia2 <= F) AND      (fa2 >= F)\n        --  TF assegnazione 3                  ia3|**************|fa3                                             (ia3 <= I) AND (I <= fa3 <= F)\n        --  TF assegnazione 4                  ia4|************************************************|fa4           (ia4 <= I) AND      (fa4 >= F)\n\n        -- Caso 1 Esempio: assegnazione a una struttura nei limiti temporali della stessa\n        -- Caso 2 Esempio: assegnazioni a tempo indetereminato che sopravanzano la data di fine struttura\n        -- Caso 3 Esempio: assegnazioni antecedenti il 2018\n        -- Caso 4 Esempio: assegnazione a tempo indeterminato a una struttura che ha cambiato nome/responsabile nel corso del tempo\n        (\n            (t1.data_inizio_assegnazione_struttura >= t2.data_inizio_struttura AND t1.data_fine_assegnazione_struttura <= t2.data_fine_struttura) OR\n            (t1.data_inizio_assegnazione_struttura >= t2.data_inizio_struttura AND t1.data_inizio_assegnazione_struttura <= t2.data_fine_struttura AND t1.data_fine_assegnazione_struttura >= t2.data_fine_struttura) OR\n            (t1.data_inizio_assegnazione_struttura <= t2.data_inizio_struttura AND t1.data_fine_assegnazione_struttura >= t2.data_inizio_struttura AND t1.data_fine_assegnazione_struttura <= t2.data_fine_struttura) OR\n            (t1.data_inizio_assegnazione_struttura <= t2.data_inizio_struttura AND t1.data_fine_assegnazione_struttura >= t2.data_fine_struttura)\n        )\n-- UNION con le assegnazioni degli esterni. Poich\u00e9 mancano gli estremi di assegnazione,\n-- si associano gli esterni all'ultima struttura disponibile\nUNION\nSELECT  t1.*,\n        t2.id_struttura\nFROM    fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE t1\nLEFT JOIN fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA t2\n    ON t1.codice_struttura = t2.codice_struttura",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_S1P",
+    "fbk_test1__MASTER_DATA.STRUTTURA_BASE",
+    "fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA",
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_TERMINALE",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE",
+    "fbk_test1__VISUALIZATION_TABLES.PERSONA_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_ente",
+        "description": "Codice ente",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_assegnazione_struttura",
+        "description": "Data inizio assegnazione struttura",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_assegnazione_struttura",
+        "description": "Data fine assegnazione struttura",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_assegnazione_struttura",
+        "description": "Tipo assegnazione struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_struttura",
+        "description": "Codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inserimento_assegnazione_struttura",
+        "description": "Data inserimento assegnazione struttura",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_applicazione_assegnazione_struttura",
+        "description": "Data applicazione assegnazione struttura",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

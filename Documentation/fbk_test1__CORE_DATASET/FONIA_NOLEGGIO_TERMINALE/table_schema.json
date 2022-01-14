@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+      "name": "contratto_id",
+      "description": "Contratto id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "modello_id",
+      "description": "Modello id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "canone_noleggio_terminale",
+      "description": "Canone noleggio terminale",
+      "type": "number",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "durata_noleggio_terminale",
+      "description": "Durata noleggio terminale",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

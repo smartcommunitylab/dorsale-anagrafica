@@ -1,0 +1,43 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_TIPOLOGIA_LINEA",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_TIPOLOGIA_LINEA",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(id, 1, 1, 0) AS id, descrizione AS descrizione_tipologia_linea\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_tipologia_linea.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_LINEA"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "id",
+        "description": "Id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_tipologia_linea",
+        "description": "Descrizione tipologia linea",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

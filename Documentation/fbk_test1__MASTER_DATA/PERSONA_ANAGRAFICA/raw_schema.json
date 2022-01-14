@@ -1,0 +1,92 @@
+{
+  "fields": [
+    {
+      "name": "matricola_estesa",
+      "description": "Matricola estesa",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola",
+      "description": "Matricola",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "cognome",
+      "description": "Cognome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "nome",
+      "description": "Nome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_nascita",
+      "description": "Data nascita",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_fiscale",
+      "description": "Codice fiscale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "sesso",
+      "description": "Sesso",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_cittadino",
+      "description": "Codice cittadino",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "provenienza",
+      "description": "Provenienza",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "eta",
+      "description": "Eta",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "range_eta",
+      "description": "Range eta",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

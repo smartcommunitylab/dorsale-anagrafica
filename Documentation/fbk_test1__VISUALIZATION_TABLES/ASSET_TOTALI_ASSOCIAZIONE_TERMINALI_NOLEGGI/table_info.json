@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_TOTALI_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_version": "1.0",
+  "table_definition": "SELECT terminale_id, imei, terminale_is_riscattato, stato_terminale, canone_noleggio_terminale, durata_noleggio_terminale, descrizione_modello_terminale, descrizione_fascia_terminale, descrizione_tipologia_terminale, descrizione_marca_terminale, caratteristiche_modello_terminale, peso_modello_terminale, contratto_id, codice_riferimento_contratto, descrizione_contratto\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI\nUNION\nSELECT terminale_id, imei, terminale_is_riscattato, stato_terminale, canone_noleggio_terminale, durata_noleggio_terminale, descrizione_modello_terminale, descrizione_fascia_terminale, descrizione_tipologia_terminale, descrizione_marca_terminale, caratteristiche_modello_terminale, peso_modello_terminale, contratto_id, codice_riferimento_contratto, descrizione_contratto\nFROM fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

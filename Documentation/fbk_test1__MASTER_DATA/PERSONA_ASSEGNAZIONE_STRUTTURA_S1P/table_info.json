@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_ASSEGNAZIONE_STRUTTURA_S1P",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_S1P",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        CONCAT(t2.prefisso_matricola, CAST(t1.matricola AS VARCHAR)) as matricola_estesa\nFROM    fbk_test1__CORE_DATASET.S1P_ASSEGNAZIONE_STRUTTURA t1\nLEFT JOIN   fbk_test1__MASTER_DATA.MAPPING_ENTE t2 ON t1.codice_ente = t2.codice_ente",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_ASSEGNAZIONE_STRUTTURA",
+    "fbk_test1__MASTER_DATA.MAPPING_ENTE"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

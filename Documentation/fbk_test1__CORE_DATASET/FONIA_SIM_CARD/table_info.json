@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_SIM_CARD",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_SIM_CARD",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(\"fonia_sim_card.csv\".\"id\", 1, 1, 0) AS id, TO_DATE(\"fonia_sim_card.csv\".\"data_primo_inserimento\", 'YYYY-MM-DD', 1) AS data_primo_inserimento, TO_DATE(\"fonia_sim_card.csv\".\"data_ultima_modifica\", 'YYYY-MM-DD', 1) AS data_ultima_modifica, TO_DATE(\"fonia_sim_card.csv\".\"data_fine\", 'YYYY-MM-DD', 1) AS data_fine, TO_DATE(\"fonia_sim_card.csv\".\"data_inizio\", 'YYYY-MM-DD', 1) AS data_inizio, CONVERT_TO_INTEGER(CASE WHEN CASE WHEN \"fonia_sim_card.csv\".\"e_sim\" = 'false' THEN '0' ELSE \"fonia_sim_card.csv\".\"e_sim\" END = 'true' THEN '1' ELSE CASE WHEN \"fonia_sim_card.csv\".\"e_sim\" = 'false' THEN '0' ELSE \"fonia_sim_card.csv\".\"e_sim\" END END, 1, 1, 0) AS e_sim, iccid, CONVERT_TO_INTEGER(kb, 1, 1, 0) AS kb, note, CONVERT_TO_INTEGER(CASE\n  WHEN CASE\n  WHEN twin_card = 'false' THEN '0'\n  ELSE twin_card\nEND = 'true' THEN '1'\n  ELSE CASE\n  WHEN twin_card = 'false' THEN '0'\n  ELSE twin_card\nEND\nEND, 1, 1, 0) AS twin_card, CONVERT_TO_INTEGER(linea_id, 1, 1, 0) AS linea_id\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_sim_card.csv\" AS \"fonia_sim_card.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

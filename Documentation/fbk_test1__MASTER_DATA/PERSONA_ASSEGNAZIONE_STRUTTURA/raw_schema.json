@@ -1,0 +1,84 @@
+{
+  "fields": [
+    {
+      "name": "codice_ente",
+      "description": "Codice ente",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola",
+      "description": "Matricola",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_assegnazione_struttura",
+      "description": "Data inizio assegnazione struttura",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_assegnazione_struttura",
+      "description": "Data fine assegnazione struttura",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "tipo_assegnazione_struttura",
+      "description": "Tipo assegnazione struttura",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_struttura",
+      "description": "Codice struttura",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inserimento_assegnazione_struttura",
+      "description": "Data inserimento assegnazione struttura",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_applicazione_assegnazione_struttura",
+      "description": "Data applicazione assegnazione struttura",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola_estesa",
+      "description": "Matricola estesa",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "id_struttura",
+      "description": "Id struttura",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

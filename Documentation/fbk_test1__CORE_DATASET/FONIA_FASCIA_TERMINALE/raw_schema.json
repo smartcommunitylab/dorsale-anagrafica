@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "description": "Id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_fascia_terminale",
+      "description": "Descrizione fascia terminale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

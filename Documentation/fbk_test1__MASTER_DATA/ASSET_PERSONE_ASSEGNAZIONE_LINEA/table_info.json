@@ -1,0 +1,29 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "ASSET_PERSONE_ASSEGNAZIONE_LINEA",
+  "table_full_name": "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t_al.*,\n        t_as.id_struttura\nFROM (\n    SELECT  t1.id AS id_assegnazione_linea,\n            t1.data_fine_assegnazione_linea,\n            t1.data_inizio_assegnazione_linea,\n            t1.linea_is_personale,\n            t1.causale_ritiro,\n            t1.linea_id,\n            t2.matricola AS matricola_estesa,\n            CAST(NULLIF(regexp_replace(t2.matricola, '([A-Z]+)([0-9]+)', '$2'), '') AS INT) as matricola,\n            t2.codice_fiscale,\n            t3.codice_struttura AS codice_struttura_fonia,\n            t4.descrizione_gruppo,\n            t5.descrizione_tipologia_linea\n    FROM      fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA t1\n    LEFT JOIN fbk_test1__CORE_DATASET.FONIA_PERSONA AS t2 ON t1.persona_id = t2.id\n    LEFT JOIN fbk_test1__CORE_DATASET.FONIA_STRUTTURA AS t3 ON t2.struttura_id = t3.id\n    LEFT JOIN fbk_test1__CORE_DATASET.FONIA_GRUPPO AS t4 ON t1.gruppo_id = t4.id\n    LEFT JOIN fbk_test1__CORE_DATASET.FONIA_TIPOLOGIA_LINEA AS t5 ON t1.tipologia_id = t5.id \n    WHERE     t1.linea_is_personale = 1\n) t_al\nLEFT JOIN fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA t_as \n        ON t_al.matricola_estesa = t_as.matricola_estesa AND\n        (\n          (t_al.data_inizio_assegnazione_linea >= t_as.data_inizio_assegnazione_struttura AND t_al.data_fine_assegnazione_linea <= t_as.data_fine_assegnazione_struttura) OR\n          (t_al.data_inizio_assegnazione_linea >= t_as.data_inizio_assegnazione_struttura AND t_al.data_inizio_assegnazione_linea <= t_as.data_fine_assegnazione_struttura AND t_al.data_fine_assegnazione_linea >= t_as.data_fine_assegnazione_struttura) OR\n          (t_al.data_inizio_assegnazione_linea <= t_as.data_inizio_assegnazione_struttura AND t_al.data_fine_assegnazione_linea >= t_as.data_inizio_assegnazione_struttura AND t_al.data_fine_assegnazione_linea <= t_as.data_fine_assegnazione_struttura) OR\n          (t_al.data_inizio_assegnazione_linea <= t_as.data_inizio_assegnazione_struttura AND t_al.data_fine_assegnazione_linea >= t_as.data_fine_assegnazione_struttura)\n        )\nORDER BY  id_assegnazione_linea",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.FONIA_GRUPPO",
+    "fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA",
+    "fbk_test1__CORE_DATASET.FONIA_PERSONA",
+    "fbk_test1__CORE_DATASET.FONIA_STRUTTURA",
+    "fbk_test1__CORE_DATASET.FONIA_TIPOLOGIA_LINEA",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSEGNAZIONE_LINEA",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_ASSEGNAZIONE_LINEA",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSEGNAZIONE_LINEA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

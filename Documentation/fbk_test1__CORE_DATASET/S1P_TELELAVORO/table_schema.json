@@ -1,0 +1,68 @@
+{
+  "fields": [
+    {
+      "name": "codice_ente",
+      "description": "Codice ente",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola",
+      "description": "Matricola",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_telelavoro",
+      "description": "Data inizio telelavoro",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_telelavoro",
+      "description": "Data fine telelavoro",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "tipo_telelavoro",
+      "description": "Tipo telelavoro",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_telelavoro",
+      "description": "Descrizione telelavoro",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inserimento_telelavoro",
+      "description": "Data inserimento telelavoro",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_applicazione_telelavoro",
+      "description": "Data applicazione telelavoro",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

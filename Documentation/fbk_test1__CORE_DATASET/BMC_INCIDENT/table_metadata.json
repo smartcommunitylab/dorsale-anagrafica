@@ -1,0 +1,138 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "BMC_INCIDENT",
+  "table_full_name": "fbk_test1__CORE_DATASET.BMC_INCIDENT",
+  "table_version": "1.0",
+  "table_definition": "SELECT bmc_incident, bmc_company, bmc_direct_contact_organization, bmc_direct_contact_departement, UPPER(bmc_direct_contact_person_id) AS bmc_direct_contact_person_id, bmc_nome, bmc_cognome, bmc_servizio, bmc_status, TO_TIMESTAMP(bmc_data_submission, 'YYYY-MM-DD HH24:MI:SS', 1) AS bmc_data_submission, TO_TIMESTAMP(bmc_data_risoluzione, 'YYYY-MM-DD HH24:MI:SS', 1) AS bmc_data_risoluzione, bmc_sommario, bmc_note, bmc_risoluzione\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.BMC",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_BMC_INCIDENT"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "BMC",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "bmc_incident",
+        "description": "Bmc incident",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_company",
+        "description": "Bmc company",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_direct_contact_organization",
+        "description": "Bmc direct contact organization",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_direct_contact_departement",
+        "description": "Bmc direct contact departement",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_direct_contact_person_id",
+        "description": "Bmc direct contact person id",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_nome",
+        "description": "Bmc nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_cognome",
+        "description": "Bmc cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_servizio",
+        "description": "Bmc servizio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_status",
+        "description": "Bmc status",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_data_submission",
+        "description": "Bmc data submission",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_data_risoluzione",
+        "description": "Bmc data risoluzione",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_sommario",
+        "description": "Bmc sommario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_note",
+        "description": "Bmc note",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_risoluzione",
+        "description": "Bmc risoluzione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

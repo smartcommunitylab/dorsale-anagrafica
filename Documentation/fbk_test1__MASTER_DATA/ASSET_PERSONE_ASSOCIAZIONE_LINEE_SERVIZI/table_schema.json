@@ -1,0 +1,108 @@
+{
+  "fields": [
+    {
+      "name": "id_assegnazione_servizio",
+      "description": "Id assegnazione servizio",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_assegnazione_servizio",
+      "description": "Data fine assegnazione servizio",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_assegnazione_servizio",
+      "description": "Data inizio assegnazione servizio",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "linea_id",
+      "description": "Linea id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "numero_telefono",
+      "description": "Numero telefono",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "stato_linea",
+      "description": "Stato linea",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_servizio",
+      "description": "Descrizione servizio",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "canone_servizio",
+      "description": "Canone servizio",
+      "type": "number",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_servizio",
+      "description": "Codice servizio",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "servizio_is_gratuito",
+      "description": "Servizio is gratuito",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "tipo_canone_servizio",
+      "description": "Tipo canone servizio",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "codice_riferimento_contratto",
+      "description": "Codice riferimento contratto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_contratto",
+      "description": "Descrizione contratto",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

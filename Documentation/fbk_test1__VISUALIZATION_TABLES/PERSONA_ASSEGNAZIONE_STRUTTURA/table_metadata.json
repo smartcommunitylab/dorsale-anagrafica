@@ -1,0 +1,90 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_ASSEGNAZIONE_STRUTTURA",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_ASSEGNAZIONE_STRUTTURA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  matricola_estesa,\n        CAST(data_inizio_assegnazione_struttura AS TIMESTAMP) AS data_inizio_assegnazione_struttura, \n        CAST(data_fine_assegnazione_struttura AS TIMESTAMP) AS data_fine_assegnazione_struttura,  \n        CAST(data_inserimento_assegnazione_struttura AS TIMESTAMP) AS data_inserimento_assegnazione_struttura, \n        CAST(data_applicazione_assegnazione_struttura AS TIMESTAMP) AS data_applicazione_assegnazione_struttura,\n        tipo_assegnazione_struttura, \n        codice_struttura,\n        id_struttura\nFROM    fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "assegnazione_struttura",
+  "dss_endpoint": "/assegnazione-struttura",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_assegnazione_struttura",
+        "description": "Data inizio assegnazione struttura",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_assegnazione_struttura",
+        "description": "Data fine assegnazione struttura",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inserimento_assegnazione_struttura",
+        "description": "Data inserimento assegnazione struttura",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_applicazione_assegnazione_struttura",
+        "description": "Data applicazione assegnazione struttura",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_assegnazione_struttura",
+        "description": "Tipo assegnazione struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_struttura",
+        "description": "Codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

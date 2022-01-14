@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "codice_ente",
+      "description": "Codice ente",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "prefisso_matricola",
+      "description": "Prefisso matricola",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

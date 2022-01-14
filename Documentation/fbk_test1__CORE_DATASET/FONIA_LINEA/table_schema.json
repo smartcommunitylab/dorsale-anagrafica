@@ -1,0 +1,60 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "description": "Id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "numero_telefono",
+      "description": "Numero telefono",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "stato_linea",
+      "description": "Stato linea",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "contratto_id",
+      "description": "Contratto id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "tipologia_id",
+      "description": "Tipologia id",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_primo_inserimento",
+      "description": "Data primo inserimento",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_ultima_modifica",
+      "description": "Data ultima modifica",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

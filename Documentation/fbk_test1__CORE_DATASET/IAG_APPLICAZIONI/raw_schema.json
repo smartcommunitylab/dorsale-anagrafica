@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "name": "codice_applicazione",
+      "description": "Codice applicazione",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_applicazione",
+      "description": "Descrizione applicazione",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "account",
+      "description": "Account",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "profilo",
+      "description": "Profilo",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gestione",
+      "description": "Gestione",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "fields": [
+    {
+      "name": "bmc_incident",
+      "description": "Bmc incident",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_company",
+      "description": "Bmc company",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_direct_contact_organization",
+      "description": "Bmc direct contact organization",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_direct_contact_departement",
+      "description": "Bmc direct contact departement",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_nome",
+      "description": "Bmc nome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_cognome",
+      "description": "Bmc cognome",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_servizio",
+      "description": "Bmc servizio",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_status",
+      "description": "Bmc status",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_data_submission",
+      "description": "Bmc data submission",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_data_risoluzione",
+      "description": "Bmc data risoluzione",
+      "type": "datetime",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_sommario",
+      "description": "Bmc sommario",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_note",
+      "description": "Bmc note",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bmc_risoluzione",
+      "description": "Bmc risoluzione",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "matricola_estesa",
+      "description": "Matricola estesa",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

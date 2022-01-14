@@ -1,0 +1,147 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_TOTALI_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_version": "1.0",
+  "table_definition": "SELECT terminale_id, imei, terminale_is_riscattato, stato_terminale, canone_noleggio_terminale, durata_noleggio_terminale, descrizione_modello_terminale, descrizione_fascia_terminale, descrizione_tipologia_terminale, descrizione_marca_terminale, caratteristiche_modello_terminale, peso_modello_terminale, contratto_id, codice_riferimento_contratto, descrizione_contratto\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI\nUNION\nSELECT terminale_id, imei, terminale_is_riscattato, stato_terminale, canone_noleggio_terminale, durata_noleggio_terminale, descrizione_modello_terminale, descrizione_fascia_terminale, descrizione_tipologia_terminale, descrizione_marca_terminale, caratteristiche_modello_terminale, peso_modello_terminale, contratto_id, codice_riferimento_contratto, descrizione_contratto\nFROM fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "terminale_id",
+        "description": "Terminale id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "imei",
+        "description": "Imei",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "terminale_is_riscattato",
+        "description": "Terminale is riscattato",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "stato_terminale",
+        "description": "Stato terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "canone_noleggio_terminale",
+        "description": "Canone noleggio terminale",
+        "type": "number",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "durata_noleggio_terminale",
+        "description": "Durata noleggio terminale",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_modello_terminale",
+        "description": "Descrizione modello terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_fascia_terminale",
+        "description": "Descrizione fascia terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_tipologia_terminale",
+        "description": "Descrizione tipologia terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_marca_terminale",
+        "description": "Descrizione marca terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "caratteristiche_modello_terminale",
+        "description": "Caratteristiche modello terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "peso_modello_terminale",
+        "description": "Peso modello terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "contratto_id",
+        "description": "Contratto id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_riferimento_contratto",
+        "description": "Codice riferimento contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_contratto",
+        "description": "Descrizione contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

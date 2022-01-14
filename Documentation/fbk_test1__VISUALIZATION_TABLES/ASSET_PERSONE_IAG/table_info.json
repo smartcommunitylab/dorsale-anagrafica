@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_IAG",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_IAG",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_identificativo_igi, nome, cognome, codice_fiscale, CAST(data_nascita AS TIMESTAMP) AS data_nascita, codice_area_contrattuale, descrizione_area_contrattuale, matricola, codice_cittadino, applicazione, account, disabilitato, CAST(data_disabilitazione AS TIMESTAMP) AS data_disabilitazione, permesso, diritto, matricola_estesa, codice_applicazione, descrizione_applicazione, tipologia_account, profilo, gestione\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "iag",
+  "dss_endpoint": "/iag",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

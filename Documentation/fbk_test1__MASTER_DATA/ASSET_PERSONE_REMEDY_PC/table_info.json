@@ -1,0 +1,24 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "ASSET_PERSONE_REMEDY_PC",
+  "table_full_name": "fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        t2.id_struttura\nFROM (\n    SELECT  *,\n            REGEXP_REPLACE(matricola, '.*?(ES|PR)([0]+)([0-9]+).*?', '$1$3') AS matricola_estesa\n    FROM    fbk_test1__CORE_DATASET.REMEDY_PC\n    WHERE   matricola NOT IN ('', 'PR00000')\n) t1\nLEFT JOIN fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE t2\n    ON \n        CASE\n            WHEN t1.matricola_estesa = t2.matricola_estesa THEN 1\n            WHEN NULLIF(REGEXP_REPLACE(t1.matricola, '([A-Z_-]+)', ''), '') = NULLIF(REGEXP_REPLACE(t2.matricola, '([A-Z]+_-)', ''), '') THEN 1\n            ELSE 0\n        END = 1\nORDER BY pdl_id",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.REMEDY_PC",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_TOTALI_REMEDY_PC",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_REMEDY_PC"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

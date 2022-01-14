@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_ANAGRAFICA",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_ANAGRAFICA",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(FLOOR(C_ENTE) as INTEGER) AS codice_ente, CAST(FLOOR(C_MATRI) as INTEGER) AS matricola, Z_NOME AS nome, Z_COGNOME AS cognome, CAST(D_NASCITA as DATE) AS data_nascita, C_FISCALE AS codice_fiscale, F_SESSO AS sesso, CAST(FLOOR(C_CITT) as INTEGER) AS codice_cittadino\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_anagrafica.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA",
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_S1P"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

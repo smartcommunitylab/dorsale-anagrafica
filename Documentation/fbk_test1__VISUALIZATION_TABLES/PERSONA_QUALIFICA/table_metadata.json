@@ -1,0 +1,98 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_QUALIFICA",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_QUALIFICA",
+  "table_version": "1.0",
+  "table_definition": "SELECT matricola_estesa, CAST(data_inizio_qualifica AS TIMESTAMP) AS data_inizio_qualifica, \nCAST(data_fine_qualifica AS TIMESTAMP) AS data_fine_qualifica, \nCAST(data_inserimento_qualifica AS TIMESTAMP) AS data_inserimento_qualifica, \nCAST(data_applicazione_qualifica AS TIMESTAMP) AS data_applicazione_qualifica, codice_qualifica, descrizione_qualifica, codice_livello_giuridico, descrizione_livello_giuridico\nFROM fbk_test1__MASTER_DATA.PERSONA_QUALIFICA",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_QUALIFICA"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "qualifica",
+  "dss_endpoint": "/qualifica",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_qualifica",
+        "description": "Data inizio qualifica",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_qualifica",
+        "description": "Data fine qualifica",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inserimento_qualifica",
+        "description": "Data inserimento qualifica",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_applicazione_qualifica",
+        "description": "Data applicazione qualifica",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_qualifica",
+        "description": "Codice qualifica",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_qualifica",
+        "description": "Descrizione qualifica",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_livello_giuridico",
+        "description": "Codice livello giuridico",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_livello_giuridico",
+        "description": "Descrizione livello giuridico",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

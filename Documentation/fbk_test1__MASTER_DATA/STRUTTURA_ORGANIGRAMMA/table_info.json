@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "STRUTTURA_ORGANIGRAMMA",
+  "table_full_name": "fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        t2.id_struttura\nFROM    (\n    SELECT  DISTINCT codice_struttura,\n            codice_struttura_superiore,\n            tipo_struttura_superiore,\n            descrizione_struttura_superiore,\n            livello_struttura_superiore,\n            data_inizio_struttura_calcolata,\n            data_fine_struttura_calcolata\n    FROM    fbk_test1__CORE_DATASET.S1P_GERARCHIA\n    ORDER BY codice_struttura\n) t1\nLEFT JOIN fbk_test1__MASTER_DATA.STRUTTURA_BASE t2\n    ON  t1.codice_struttura = t2.codice_struttura AND\n        (\n            (t1.data_inizio_struttura_calcolata >= t2.data_inizio_struttura AND t1.data_fine_struttura_calcolata <= t2.data_fine_struttura) OR\n            (t1.data_inizio_struttura_calcolata >= t2.data_inizio_struttura AND t1.data_inizio_struttura_calcolata <= t2.data_fine_struttura AND t1.data_fine_struttura_calcolata >= t2.data_fine_struttura) OR\n            (t1.data_inizio_struttura_calcolata <= t2.data_inizio_struttura AND t1.data_fine_struttura_calcolata >= t2.data_inizio_struttura AND t1.data_fine_struttura_calcolata <= t2.data_fine_struttura) OR\n            (t1.data_inizio_struttura_calcolata <= t2.data_inizio_struttura AND t1.data_fine_struttura_calcolata >= t2.data_fine_struttura)\n        )",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_GERARCHIA",
+    "fbk_test1__MASTER_DATA.STRUTTURA_BASE"
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.STRUTTURA_ORGANIGRAMMA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

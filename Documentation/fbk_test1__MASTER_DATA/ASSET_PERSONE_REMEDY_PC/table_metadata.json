@@ -1,0 +1,260 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "ASSET_PERSONE_REMEDY_PC",
+  "table_full_name": "fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        t2.id_struttura\nFROM (\n    SELECT  *,\n            REGEXP_REPLACE(matricola, '.*?(ES|PR)([0]+)([0-9]+).*?', '$1$3') AS matricola_estesa\n    FROM    fbk_test1__CORE_DATASET.REMEDY_PC\n    WHERE   matricola NOT IN ('', 'PR00000')\n) t1\nLEFT JOIN fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE t2\n    ON \n        CASE\n            WHEN t1.matricola_estesa = t2.matricola_estesa THEN 1\n            WHEN NULLIF(REGEXP_REPLACE(t1.matricola, '([A-Z_-]+)', ''), '') = NULLIF(REGEXP_REPLACE(t2.matricola, '([A-Z]+_-)', ''), '') THEN 1\n            ELSE 0\n        END = 1\nORDER BY pdl_id",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.REMEDY_PC",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_TOTALI_REMEDY_PC",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_REMEDY_PC"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "pdl_id",
+        "description": "Pdl id",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "aid",
+        "description": "Aid",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_stato",
+        "description": "Pdl stato",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_codice_soggetto",
+        "description": "Pdl codice soggetto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_codice_struttura",
+        "description": "Pdl codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_descrizione_soggetto",
+        "description": "Pdl descrizione soggetto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_descrizione_struttura",
+        "description": "Pdl descrizione struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_dipartimento_appartenenza",
+        "description": "Pdl dipartimento appartenenza",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_cap",
+        "description": "Pdl cap",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_localita",
+        "description": "Pdl localita",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_indirizzo",
+        "description": "Pdl indirizzo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_ubicazione",
+        "description": "Pdl ubicazione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_piano",
+        "description": "Pdl piano",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_stanza",
+        "description": "Pdl stanza",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_cognome",
+        "description": "Pdl cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_nome",
+        "description": "Pdl nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_data_installazione",
+        "description": "Pdl data installazione",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_data_acquisto",
+        "description": "Pdl data acquisto",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_tipo",
+        "description": "Pdl tipo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_produttore",
+        "description": "Pdl produttore",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_modello",
+        "description": "Pdl modello",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_proprietario",
+        "description": "Pdl proprietario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_desktop_management",
+        "description": "Pdl desktop management",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_fleet",
+        "description": "Pdl fleet",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_scadenza_fleet",
+        "description": "Pdl scadenza fleet",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "pdl_sistema_operativo",
+        "description": "Pdl sistema operativo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

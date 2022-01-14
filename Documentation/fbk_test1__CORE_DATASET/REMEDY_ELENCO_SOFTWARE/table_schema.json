@@ -1,0 +1,52 @@
+{
+  "fields": [
+    {
+      "name": "identificativo_pat_software_remedy",
+      "description": "Identificativo pat software remedy",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "publisher_software_remedy",
+      "description": "Publisher software remedy",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "nome_software_remedy",
+      "description": "Nome software remedy",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "versione_software_remedy",
+      "description": "Versione software remedy",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "bitswidth",
+      "description": "Bitswidth",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_installazione_software_remedy",
+      "description": "Data installazione software remedy",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

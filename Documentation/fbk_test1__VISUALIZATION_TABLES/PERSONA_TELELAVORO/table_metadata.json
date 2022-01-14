@@ -1,0 +1,82 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_TELELAVORO",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_TELELAVORO",
+  "table_version": "1.0",
+  "table_definition": "SELECT matricola_estesa, CAST(data_inizio_telelavoro AS TIMESTAMP) AS data_inizio_telelavoro, \nCAST(data_fine_telelavoro AS TIMESTAMP) AS data_fine_telelavoro, \nCAST(data_inserimento_telelavoro AS TIMESTAMP) AS data_inserimento_telelavoro,\nCAST(data_applicazione_telelavoro AS TIMESTAMP) AS data_applicazione_telelavoro, tipo_telelavoro, descrizione_telelavoro\nFROM fbk_test1__MASTER_DATA.PERSONA_TELELAVORO",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_TELELAVORO"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "telelavoro",
+  "dss_endpoint": "/telelavoro",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_telelavoro",
+        "description": "Data inizio telelavoro",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_telelavoro",
+        "description": "Data fine telelavoro",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inserimento_telelavoro",
+        "description": "Data inserimento telelavoro",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_applicazione_telelavoro",
+        "description": "Data applicazione telelavoro",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_telelavoro",
+        "description": "Tipo telelavoro",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_telelavoro",
+        "description": "Descrizione telelavoro",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

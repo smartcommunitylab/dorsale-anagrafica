@@ -1,0 +1,306 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "APPLICATIVI_STRUTTURE",
+  "table_full_name": "fbk_test1__CORE_DATASET.APPLICATIVI_STRUTTURE",
+  "table_version": "1.0",
+  "table_definition": "SELECT TO_TIMESTAMP(appl_timestamp, 'DD/MM/YYYY HH24.MI.SS', 1) AS appl_timestamp, appl_mail_responsabile, appl_nome_struttura, appl_codice_struttura, appl_nome_struttura_primo_livello, appl_codice_struttura_primo_livello, appl_nome_applicativo, appl_nome_applicativo_master, appl_descrizione_applicativo, appl_funzioni_critiche_per_esterni, appl_tipologia_software, appl_fornitore_esterno, appl_inzio_contratto, appl_scadenza_contratto, appl_produttore, appl_versione, appl_tipologia_applicazione, appl_modalita_installazione, appl_tipologia_licenze, CONVERT_TO_INTEGER(appl_numero_licenze, 1, 1, 0) AS appl_numero_licenze, CONVERT_TO_INTEGER(appl_numero_utilizzatori, 1, 1, 0) AS appl_numero_utilizzatori, appl_piattaforma_tecnologica, appl_ambiente_sviluppo, appl_interoperabilita_software, appl_frequenza_utilizzo, appl_impatto_dipartimento_servizio, appl_prospettive_medio_termine, appl_provenienza_record, appl_macroarea, appl_ambito_applicativo, appl_ulteriore_analisi, appl_note, appl_da_cancellare, appl_dato_privacy, appl_dato_openData\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.APPLICATIVI.\"applicativi.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "APPLICATIVI",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "appl_timestamp",
+        "description": "Appl timestamp",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_mail_responsabile",
+        "description": "Appl mail responsabile",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_nome_struttura",
+        "description": "Appl nome struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_codice_struttura",
+        "description": "Appl codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_nome_struttura_primo_livello",
+        "description": "Appl nome struttura primo livello",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_codice_struttura_primo_livello",
+        "description": "Appl codice struttura primo livello",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_nome_applicativo",
+        "description": "Appl nome applicativo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_nome_applicativo_master",
+        "description": "Appl nome applicativo master",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_descrizione_applicativo",
+        "description": "Appl descrizione applicativo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_funzioni_critiche_per_esterni",
+        "description": "Appl funzioni critiche per esterni",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_tipologia_software",
+        "description": "Appl tipologia software",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_fornitore_esterno",
+        "description": "Appl fornitore esterno",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_inzio_contratto",
+        "description": "Appl inzio contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_scadenza_contratto",
+        "description": "Appl scadenza contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_produttore",
+        "description": "Appl produttore",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_versione",
+        "description": "Appl versione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_tipologia_applicazione",
+        "description": "Appl tipologia applicazione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_modalita_installazione",
+        "description": "Appl modalita installazione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_tipologia_licenze",
+        "description": "Appl tipologia licenze",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_numero_licenze",
+        "description": "Appl numero licenze",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_numero_utilizzatori",
+        "description": "Appl numero utilizzatori",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_piattaforma_tecnologica",
+        "description": "Appl piattaforma tecnologica",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_ambiente_sviluppo",
+        "description": "Appl ambiente sviluppo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_interoperabilita_software",
+        "description": "Appl interoperabilita software",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_frequenza_utilizzo",
+        "description": "Appl frequenza utilizzo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_impatto_dipartimento_servizio",
+        "description": "Appl impatto dipartimento servizio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_prospettive_medio_termine",
+        "description": "Appl prospettive medio termine",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_provenienza_record",
+        "description": "Appl provenienza record",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_macroarea",
+        "description": "Appl macroarea",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_ambito_applicativo",
+        "description": "Appl ambito applicativo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_ulteriore_analisi",
+        "description": "Appl ulteriore analisi",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_note",
+        "description": "Appl note",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_da_cancellare",
+        "description": "Appl da cancellare",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_dato_privacy",
+        "description": "Appl dato privacy",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "appl_dato_openData",
+        "description": "Appl dato openData",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_ANAGRAFICA_RCE",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE",
+  "table_version": "1.0",
+  "table_definition": "SELECT  CONCAT(prefisso_matricola, matricola) as matricola_estesa,\n        CAST(matricola AS INT) AS matricola,\n        cognome, \n        nome, \n        data_nascita,\n        codice_fiscale, \n        '' AS sesso, \n        cast(null as int) as codice_cittadino,\n        'rce' AS provenienza\nFROM (\n    SELECT  *,\n            8 as codice_ente\n    FROM    fbk_test1__CORE_DATASET.RCE_ANAGRAFICA) t1\nLEFT JOIN   fbk_test1__MASTER_DATA.MAPPING_ENTE t2 ON t1.codice_ente = t2.codice_ente",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.RCE_ANAGRAFICA",
+    "fbk_test1__MASTER_DATA.MAPPING_ENTE"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "cognome",
+        "description": "Cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "nome",
+        "description": "Nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_nascita",
+        "description": "Data nascita",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_fiscale",
+        "description": "Codice fiscale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "sesso",
+        "description": "Sesso",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_cittadino",
+        "description": "Codice cittadino",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "provenienza",
+        "description": "Provenienza",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

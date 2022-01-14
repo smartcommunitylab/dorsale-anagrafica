@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "REMEDY_ELENCO_SOFTWARE",
+  "table_full_name": "fbk_test1__CORE_DATASET.REMEDY_ELENCO_SOFTWARE",
+  "table_version": "1.0",
+  "table_definition": "SELECT NAME as identificativo_pat_software_remedy, PUBLISHER as publisher_software_remedy, NAME0 as nome_software_remedy, VERSION as versione_software_remedy, BITSWIDTH as bitswidth, INSTALLDATE as data_installazione_software_remedy\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.REMEDY.\"software_s172_pdl e date.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": true,
+  "origin_dataset": "REMEDY",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

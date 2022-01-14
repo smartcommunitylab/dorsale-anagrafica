@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI",
+  "table_version": "1.0",
+  "table_definition": "SELECT linea_id, numero_telefono, stato_linea, CAST(data_fine_assegnazione_servizio AS TIMESTAMP) AS data_fine_assegnazione_servizio,\nCAST(data_inizio_assegnazione_servizio AS TIMESTAMP) AS data_inizio_assegnazione_servizio, descrizione_servizio, canone_servizio, codice_servizio, servizio_is_gratuito, tipo_canone_servizio, codice_riferimento_contratto, descrizione_contratto\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI\nUNION\nSELECT linea_id, numero_telefono, stato_linea, CAST(data_fine_assegnazione_servizio AS TIMESTAMP) AS data_fine_assegnazione_servizio,\nCAST(data_inizio_assegnazione_servizio AS TIMESTAMP) AS data_inizio_assegnazione_servizio, descrizione_servizio, canone_servizio, codice_servizio, servizio_is_gratuito, tipo_canone_servizio, codice_riferimento_contratto, descrizione_contratto\nFROM fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "asset_totali_associazione_linee_servizi",
+  "dss_endpoint": "/asset-totali-associazione-linee-servizi",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

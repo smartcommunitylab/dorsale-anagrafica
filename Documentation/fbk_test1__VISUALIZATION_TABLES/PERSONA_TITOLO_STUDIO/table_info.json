@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_TITOLO_STUDIO",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_TITOLO_STUDIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT matricola_estesa, CAST(data_inizio_titolo_studio AS TIMESTAMP) AS data_inizio_titolo_studio, codice_titolo_studio, descrizione_titolo_studio\nFROM fbk_test1__MASTER_DATA.PERSONA_TITOLO_STUDIO",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_TITOLO_STUDIO"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "titolo_studio",
+  "dss_endpoint": "/titolo-studio",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

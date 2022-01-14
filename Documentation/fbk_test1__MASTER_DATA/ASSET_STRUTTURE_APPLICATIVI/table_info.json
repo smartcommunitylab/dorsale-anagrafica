@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "ASSET_STRUTTURE_APPLICATIVI",
+  "table_full_name": "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        t2.id_struttura\nFROM fbk_test1__CORE_DATASET.APPLICATIVI_STRUTTURE t1\nLEFT JOIN fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA AS t2\n    ON t1.appl_codice_struttura = t2.codice_struttura",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.APPLICATIVI_STRUTTURE",
+    "fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA"
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_STRUTTURE_APPLICATIVI"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

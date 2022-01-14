@@ -1,0 +1,100 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "RCE_ANAGRAFICA",
+  "table_full_name": "fbk_test1__CORE_DATASET.RCE_ANAGRAFICA",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(FLOOR(\"RapportiRceInviatiIagData14_10_2021.xlsx\".C_MATRI) AS INTEGER) AS matricola, Z_COGNOME AS cognome, Z_NOME AS nome, CAST(\"RapportiRceInviatiIagData14_10_2021.xlsx\".D_NASCITA AS DATE) AS data_nascita, C_FISCALE AS codice_fiscale, \"COD STRUTT\" AS codice_struttura, \"DES STRUTTURA\" AS descrizione_struttura, CAST(DI_EVENTO as DATE) AS data_inizio_assegnazione_iag, TO_DATE(TO_CHAR(DF_EVENTO, 'HH:MI'), 'YYYY-MM-DD', 1) AS data_fine_assegnazione_iag\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.RCE.\"RapportiRceInviatiIagData14_10_2021.xlsx\" AS \"RapportiRceInviatiIagData14_10_2021.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA",
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "RCE",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "cognome",
+        "description": "Cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "nome",
+        "description": "Nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_nascita",
+        "description": "Data nascita",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_fiscale",
+        "description": "Codice fiscale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_struttura",
+        "description": "Codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_struttura",
+        "description": "Descrizione struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_assegnazione_iag",
+        "description": "Data inizio assegnazione iag",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_assegnazione_iag",
+        "description": "Data fine assegnazione iag",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

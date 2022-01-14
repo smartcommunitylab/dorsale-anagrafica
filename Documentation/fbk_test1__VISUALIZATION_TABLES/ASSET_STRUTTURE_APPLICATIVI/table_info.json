@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_STRUTTURE_APPLICATIVI",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_STRUTTURE_APPLICATIVI",
+  "table_version": "1.0",
+  "table_definition": "SELECT appl_timestamp, appl_mail_responsabile, appl_nome_struttura, appl_codice_struttura, appl_nome_struttura_primo_livello, appl_codice_struttura_primo_livello, appl_nome_applicativo, appl_nome_applicativo_master, appl_descrizione_applicativo, appl_funzioni_critiche_per_esterni, appl_tipologia_software, appl_fornitore_esterno, appl_inzio_contratto, appl_scadenza_contratto, appl_produttore, appl_versione, appl_tipologia_applicazione, appl_modalita_installazione, appl_tipologia_licenze, appl_numero_licenze, appl_numero_utilizzatori, appl_piattaforma_tecnologica, appl_ambiente_sviluppo, appl_interoperabilita_software, appl_frequenza_utilizzo, appl_impatto_dipartimento_servizio, appl_prospettive_medio_termine, appl_provenienza_record, appl_macroarea, appl_ambito_applicativo, appl_ulteriore_analisi, appl_note, appl_da_cancellare, appl_dato_privacy, appl_dato_openData, id_struttura\nFROM fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "applicativi_strutture",
+  "dss_endpoint": "/applicativi-strutture",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

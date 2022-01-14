@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_REMEDY_PC",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_REMEDY_PC",
+  "table_version": "1.0",
+  "table_definition": "SELECT  pdl_id,aid, pdl_stato, pdl_codice_soggetto, pdl_codice_struttura, pdl_descrizione_soggetto, pdl_descrizione_struttura, pdl_dipartimento_appartenenza, pdl_cap, pdl_localita, pdl_indirizzo, pdl_ubicazione, pdl_piano, pdl_stanza, pdl_cognome, pdl_nome, CAST(pdl_data_installazione AS TIMESTAMP) AS pdl_data_installazione,\nCAST(pdl_data_acquisto AS TIMESTAMP) AS pdl_data_acquisto, pdl_tipo, pdl_produttore, pdl_modello, pdl_proprietario, pdl_desktop_management, pdl_fleet, pdl_scadenza_fleet, pdl_sistema_operativo, matricola_estesa, id_struttura\nFROM    fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "remedy_pdl_anagrafiche",
+  "dss_endpoint": "/remedy-pdl-persone",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

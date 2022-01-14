@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE",
+  "table_version": "1.0",
+  "table_definition": "SELECT * FROM\n(SELECT DENSE_RANK() OVER(PARTITION BY matricola_estesa ORDER BY data_inizio_assegnazione_struttura DESC, data_fine_assegnazione_struttura DESC) AS ranked_history, * \nFROM fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA)\nWHERE ranked_history = 1",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

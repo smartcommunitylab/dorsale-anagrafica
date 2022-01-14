@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+      "name": "codice_orario",
+      "description": "Codice orario",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_tipo_orario",
+      "description": "Descrizione tipo orario",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_inizio_tipo_orario",
+      "description": "Data inizio tipo orario",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "data_fine_tipo_orario",
+      "description": "Data fine tipo orario",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_MAIL",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_MAIL",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_ente, matricola, data_inizio_validita_mail, data_fine_validita_mail, mail_istituzionale, codice_stato_mail, codice_tipologia_mail, COALESCE(indicatore_backup_mail, 0) AS indicatore_backup_mail, scelta_invio_comunicazioni\nFROM (\n  SELECT codice_ente, matricola, data_inizio_validita_mail, COALESCE(data_fine_validita_mail, DATE '2999-12-31') AS data_fine_validita_mail, mail_istituzionale, codice_stato_mail, codice_tipologia_mail, indicatore_backup_mail, scelta_invio_comunicazioni\n  FROM (\n    SELECT CAST(FLOOR(\"s1ps_dorsale_email.xlsx\".C_ENTE) AS INTEGER) AS codice_ente, CAST(FLOOR(\"s1ps_dorsale_email.xlsx\".C_MATRI) AS INTEGER) AS matricola, CAST(\"s1ps_dorsale_email.xlsx\".DI_INDIR AS DATE) AS data_inizio_validita_mail, CAST(CAST(\"s1ps_dorsale_email.xlsx\".DF_INDIR AS VARCHAR) AS DATE) AS data_fine_validita_mail, Z_EMAILCED AS mail_istituzionale, C_STATO AS codice_stato_mail, CAST(\"s1ps_dorsale_email.xlsx\".C_TIPO AS VARCHAR) AS codice_tipologia_mail, CAST(FLOOR(\"s1ps_dorsale_email.xlsx\".F_BACKUP) AS INTEGER) AS indicatore_backup_mail, CASE F_SCELTA WHEN '1' THEN 1 ELSE 0 END AS scelta_invio_comunicazioni\n    FROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_email.xlsx\" AS \"s1ps_dorsale_email.xlsx\"\n  ) nested_0\n) nested_0\nORDER BY indicatore_backup_mail ASC",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL",
+    "fbk_test1__MASTER_DATA.MAPPING_CODICE_TIPOLOGIA_MAIL",
+    "fbk_test1__MASTER_DATA.PERSONA_MAIL"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

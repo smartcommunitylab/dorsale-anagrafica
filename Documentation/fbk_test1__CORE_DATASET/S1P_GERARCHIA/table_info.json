@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_GERARCHIA",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_GERARCHIA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  codice_struttura, \n        tipo_struttura, \n        descrizione_struttura, \n        livello_struttura,\n        data_inizio_struttura_calcolata, \n        COALESCE(data_fine_struttura_calcolata, DATE '2999-12-31') AS data_fine_struttura_calcolata,\n        tipo_struttura_superiore, \n        codice_struttura_superiore, \n        descrizione_struttura_superiore, \n        livello_struttura_superiore,\n        data_inizio_struttura_base,\n        COALESCE(data_fine_struttura_base, DATE '2999-12-31') AS data_fine_struttura_base,\n        data_inizio_struttura_superiore,\n        COALESCE(data_fine_struttura_superiore, DATE '2999-12-31') AS data_fine_struttura_superiore \nFROM (\n    SELECT  C_SPEVTPST AS codice_struttura,\n            X_SPEVEN AS tipo_struttura, \n            X_SPEVEN1 AS descrizione_struttura, \n            CAST(CONVERT_TO_INTEGER(Z_LIVELLO, 1, 1, 0) AS INTEGER) AS livello_struttura,\n            CAST(DI_EVENTO AS DATE) AS data_inizio_struttura_calcolata,\n            CAST(DF_EVENTO AS DATE) AS data_fine_struttura_calcolata, \n            C_SPEVSTRU AS codice_struttura_superiore,\n            X_SPEVEN2 AS tipo_struttura_superiore,\n            X_SPEVEN3 AS descrizione_struttura_superiore,\n            CAST(CONVERT_TO_INTEGER(Z_LIVELLO1, 1, 1, 0) AS INTEGER) AS livello_struttura_superiore,\n            CAST(DINIZIOSTRU AS DATE) AS data_inizio_struttura_base,\n            CAST(DFINESTRU AS DATE) AS data_fine_struttura_base,\n            CAST(DINIZIOSUP AS DATE) AS data_inizio_struttura_superiore,\n            CAST(DFINESUP AS DATE) AS data_fine_struttura_superiore\n    FROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_gerarchie.xlsx\"\n)",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.STRUTTURA_BASE",
+    "fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

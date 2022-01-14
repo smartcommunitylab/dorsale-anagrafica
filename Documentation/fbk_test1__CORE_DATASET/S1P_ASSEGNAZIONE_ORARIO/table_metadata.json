@@ -1,0 +1,90 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_ASSEGNAZIONE_ORARIO",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_ASSEGNAZIONE_ORARIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(FLOOR(C_ENTE) as INTEGER) AS codice_ente, CAST(FLOOR(C_MATRI) as INTEGER) AS matricola, CAST(DI_EVENTO as DATE) AS data_inizio_assegnazione_orario, CAST(DF_EVENTO as DATE) AS data_fine_assegnazione_orario, X_TPEVEN AS tipo_assegnazione_orario, CAST(FLOOR(C_SPEVEN) as INTEGER) AS codice_orario, CAST(TS_INSERIM as DATE) AS data_inserimento_assegnazione_orario, CAST(TS_APPLICA as DATE) AS data_applicazione_assegnazione_orario\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_ass_orario.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_ORARIO"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_ente",
+        "description": "Codice ente",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_assegnazione_orario",
+        "description": "Data inizio assegnazione orario",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_assegnazione_orario",
+        "description": "Data fine assegnazione orario",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_assegnazione_orario",
+        "description": "Tipo assegnazione orario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_orario",
+        "description": "Codice orario",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inserimento_assegnazione_orario",
+        "description": "Data inserimento assegnazione orario",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_applicazione_assegnazione_orario",
+        "description": "Data applicazione assegnazione orario",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

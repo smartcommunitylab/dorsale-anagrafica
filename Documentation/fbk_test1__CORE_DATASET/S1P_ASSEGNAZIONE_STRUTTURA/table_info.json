@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_ASSEGNAZIONE_STRUTTURA",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_ASSEGNAZIONE_STRUTTURA",
+  "table_version": "1.0",
+  "table_definition": "SELECT \ncast(CONVERT_TO_INTEGER(C_ENTE, 1, 1, 0) as int) AS codice_ente,\ncast(CONVERT_TO_INTEGER(C_MATRI, 1, 1, 0) as int) AS matricola,\nCAST(DI_EVENTO as DATE) AS data_inizio_assegnazione_struttura, CAST(DF_EVENTO as DATE) AS data_fine_assegnazione_struttura, X_TPEVEN AS tipo_assegnazione_struttura, C_SPEVEN AS codice_struttura, CAST(TS_INSERIM AS DATE) AS data_inserimento_assegnazione_struttura, CAST(TS_APPLICA AS DATE) AS data_applicazione_assegnazione_struttura\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_ass_struttura.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_S1P"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

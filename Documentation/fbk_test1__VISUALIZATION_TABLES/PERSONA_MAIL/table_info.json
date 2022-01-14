@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_MAIL",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_MAIL",
+  "table_version": "1.0",
+  "table_definition": "SELECT matricola_estesa, CAST(data_inizio_validita_mail AS TIMESTAMP) AS data_inizio_validita_mail,\nCAST(data_fine_validita_mail AS TIMESTAMP) AS data_fine_validita_mail, mail_istituzionale, codice_stato_mail, descrizione_stato_mail, codice_tipologia_mail, descrizione_tipologia_mail, indicatore_backup_mail, scelta_invio_comunicazioni\nFROM fbk_test1__MASTER_DATA.PERSONA_MAIL",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_MAIL"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "mail",
+  "dss_endpoint": "/mail",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

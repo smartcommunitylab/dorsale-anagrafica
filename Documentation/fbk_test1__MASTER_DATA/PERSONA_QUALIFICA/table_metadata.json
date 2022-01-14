@@ -1,0 +1,115 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_QUALIFICA",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_QUALIFICA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  t1.*,\n        CONCAT(t2.prefisso_matricola, CAST(t1.matricola AS VARCHAR)) as matricola_estesa\nFROM    fbk_test1__CORE_DATASET.S1P_QUALIFICA t1\nLEFT JOIN   fbk_test1__MASTER_DATA.MAPPING_ENTE t2 ON t1.codice_ente = t2.codice_ente\n",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_QUALIFICA",
+    "fbk_test1__MASTER_DATA.MAPPING_ENTE"
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.PERSONA_QUALIFICA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_ente",
+        "description": "Codice ente",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_qualifica",
+        "description": "Data inizio qualifica",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_qualifica",
+        "description": "Data fine qualifica",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_qualifica",
+        "description": "Codice qualifica",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_qualifica",
+        "description": "Descrizione qualifica",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_livello_giuridico",
+        "description": "Codice livello giuridico",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_livello_giuridico",
+        "description": "Descrizione livello giuridico",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inserimento_qualifica",
+        "description": "Data inserimento qualifica",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_applicazione_qualifica",
+        "description": "Data applicazione qualifica",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

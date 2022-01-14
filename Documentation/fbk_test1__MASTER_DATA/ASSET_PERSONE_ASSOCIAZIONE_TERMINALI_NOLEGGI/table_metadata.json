@@ -1,0 +1,155 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_full_name": "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+  "table_version": "1.0",
+  "table_definition": "SELECT    t7.id AS terminale_id,\n          t7.imei,\n          t7.terminale_is_riscattato,\n          t7.stato_terminale,\n          t2.descrizione_modello_terminale,\n          t4.descrizione_fascia_terminale,\n          t6.descrizione_tipologia_terminale,\n          t5.descrizione_marca_terminale,\n          t2.caratteristiche_modello_terminale,\n          t2.peso_modello_terminale,\n          t3.codice_riferimento_contratto,\n          t3.descrizione_contratto,\n          t1.contratto_id,\n          t1.canone_noleggio_terminale,\n          t1.durata_noleggio_terminale\nFROM      fbk_test1__CORE_DATASET.FONIA_NOLEGGIO_TERMINALE t1\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_MODELLO_TERMINALE t2 ON t1.modello_id = t2.id\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_CONTRATTO t3 ON t1.contratto_id = t3.id\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_FASCIA_TERMINALE t4 ON t2.fascia_id = t4.id\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_MARCA_TERMINALE t5 ON t2.marca_id = t5.id\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_TIPOLOGIA_TERMINALE t6 ON t2.tipologia_id = t6.id\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_TERMINALE t7 ON t1.modello_id = t7.modello_id AND t1.contratto_id = t7.contratto_id\nWHERE t7.id IN (\n        SELECT  DISTINCT terminale_id\n        FROM    fbk_test1__CORE_DATASET.FONIA_TERMINALE_ASSEGNATO\n        WHERE   terminale_is_personale = 1)",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.FONIA_CONTRATTO",
+    "fbk_test1__CORE_DATASET.FONIA_FASCIA_TERMINALE",
+    "fbk_test1__CORE_DATASET.FONIA_MARCA_TERMINALE",
+    "fbk_test1__CORE_DATASET.FONIA_MODELLO_TERMINALE",
+    "fbk_test1__CORE_DATASET.FONIA_NOLEGGIO_TERMINALE",
+    "fbk_test1__CORE_DATASET.FONIA_TERMINALE",
+    "fbk_test1__CORE_DATASET.FONIA_TERMINALE_ASSEGNATO",
+    "fbk_test1__CORE_DATASET.FONIA_TIPOLOGIA_TERMINALE"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_TERMINALI_NOLEGGI"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "terminale_id",
+        "description": "Terminale id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "imei",
+        "description": "Imei",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "terminale_is_riscattato",
+        "description": "Terminale is riscattato",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "stato_terminale",
+        "description": "Stato terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_modello_terminale",
+        "description": "Descrizione modello terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_fascia_terminale",
+        "description": "Descrizione fascia terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_tipologia_terminale",
+        "description": "Descrizione tipologia terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_marca_terminale",
+        "description": "Descrizione marca terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "caratteristiche_modello_terminale",
+        "description": "Caratteristiche modello terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "peso_modello_terminale",
+        "description": "Peso modello terminale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_riferimento_contratto",
+        "description": "Codice riferimento contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_contratto",
+        "description": "Descrizione contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "contratto_id",
+        "description": "Contratto id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "canone_noleggio_terminale",
+        "description": "Canone noleggio terminale",
+        "type": "number",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "durata_noleggio_terminale",
+        "description": "Durata noleggio terminale",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_ENTE",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_ENTE",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(FLOOR(C_ENTE) as INTEGER) AS codice_ente, XENTEBREVE AS descrizione_ente\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_enti.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

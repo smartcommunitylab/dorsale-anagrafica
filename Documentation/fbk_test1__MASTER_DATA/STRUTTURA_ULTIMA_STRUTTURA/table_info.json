@@ -1,0 +1,24 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "STRUTTURA_ULTIMA_STRUTTURA",
+  "table_full_name": "fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA",
+  "table_version": "1.0",
+  "table_definition": "SELECT * \nFROM (\n    SELECT *,\n           DENSE_RANK() OVER(\n               PARTITION BY codice_struttura\n               ORDER BY data_inizio_struttura DESC, data_fine_struttura DESC) AS ranked_history\n    FROM fbk_test1__MASTER_DATA.STRUTTURA_BASE)\nWHERE ranked_history = 1",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.STRUTTURA_BASE"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_REMEDY_PC",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

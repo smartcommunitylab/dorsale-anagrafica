@@ -1,0 +1,136 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI",
+  "table_full_name": "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI",
+  "table_version": "1.0",
+  "table_definition": "SELECT    t1.id as id_assegnazione_servizio,\n          t1.data_fine_assegnazione_servizio,\n          t1.data_inizio_assegnazione_servizio,\n          t1.linea_id,\n          t2.numero_telefono,\n          t2.stato_linea,\n          t3.descrizione_servizio,\n          t3.canone_servizio,\n          t3.codice_servizio,\n          t3.servizio_is_gratuito,\n          t3.tipo_canone_servizio,\n          t4.codice_riferimento_contratto,\n  \t\t  t4.descrizione_contratto\nFROM      fbk_test1__CORE_DATASET.FONIA_SERVIZIO_ASSEGNATO t1\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_LINEA AS t2 ON t1.linea_id = t2.id\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_SERVIZIO AS t3 ON t1.servizio_id = t3.id\nLEFT JOIN fbk_test1__CORE_DATASET.FONIA_CONTRATTO AS t4 ON t2.contratto_id = t4.id\nWHERE     linea_id IN (\n                SELECT  DISTINCT linea_id\n                FROM    fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA\n                WHERE linea_is_personale = 0)",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.FONIA_CONTRATTO",
+    "fbk_test1__CORE_DATASET.FONIA_LINEA",
+    "fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA",
+    "fbk_test1__CORE_DATASET.FONIA_SERVIZIO",
+    "fbk_test1__CORE_DATASET.FONIA_SERVIZIO_ASSEGNATO"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "id_assegnazione_servizio",
+        "description": "Id assegnazione servizio",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_assegnazione_servizio",
+        "description": "Data fine assegnazione servizio",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_assegnazione_servizio",
+        "description": "Data inizio assegnazione servizio",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "linea_id",
+        "description": "Linea id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "numero_telefono",
+        "description": "Numero telefono",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "stato_linea",
+        "description": "Stato linea",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_servizio",
+        "description": "Descrizione servizio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "canone_servizio",
+        "description": "Canone servizio",
+        "type": "number",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_servizio",
+        "description": "Codice servizio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "servizio_is_gratuito",
+        "description": "Servizio is gratuito",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_canone_servizio",
+        "description": "Tipo canone servizio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_riferimento_contratto",
+        "description": "Codice riferimento contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_contratto",
+        "description": "Descrizione contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "MAPPING_ENTE",
+  "table_full_name": "fbk_test1__MASTER_DATA.MAPPING_ENTE",
+  "table_version": "1.0",
+  "table_definition": "SELECT  codice_ente,\n        CASE codice_ente\n            WHEN 1 THEN 'PR'\n            WHEN 2 THEN 'AS'\n            WHEN 8 THEN 'ES'\n        END AS prefisso_matricola\nFROM    S1P_ENTE",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE",
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_S1P",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_ORARIO",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_S1P",
+    "fbk_test1__MASTER_DATA.PERSONA_CATEGORIA_ORARIO",
+    "fbk_test1__MASTER_DATA.PERSONA_CONTRATTO",
+    "fbk_test1__MASTER_DATA.PERSONA_FORMAZIONE",
+    "fbk_test1__MASTER_DATA.PERSONA_MAIL",
+    "fbk_test1__MASTER_DATA.PERSONA_QUALIFICA",
+    "fbk_test1__MASTER_DATA.PERSONA_TELELAVORO",
+    "fbk_test1__MASTER_DATA.PERSONA_TITOLO_STUDIO",
+    "fbk_test1__MASTER_DATA.STRUTTURA_RESPONSABILE_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_ente",
+        "description": "Codice ente",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "prefisso_matricola",
+        "description": "Prefisso matricola",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

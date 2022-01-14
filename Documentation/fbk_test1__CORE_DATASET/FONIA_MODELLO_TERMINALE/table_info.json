@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_MODELLO_TERMINALE",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_MODELLO_TERMINALE",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(\"fonia_modello_terminale.csv\".\"id\", 1, 1, 0) AS id, descrizione AS descrizione_modello_terminale, caratteristiche AS caratteristiche_modello_terminale, peso AS peso_modello_terminale, CONVERT_TO_INTEGER(fascia_id, 1, 1, 0) AS fascia_id, CONVERT_TO_INTEGER(marca_id, 1, 1, 0) AS marca_id, CONVERT_TO_INTEGER(tipologia_id, 1, 1, 0) AS tipologia_id\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_modello_terminale.csv\" AS \"fonia_modello_terminale.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "codice_tipologia_mail",
+      "description": "Codice tipologia mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_tipologia_mail",
+      "description": "Descrizione tipologia mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

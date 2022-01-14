@@ -1,0 +1,102 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "PERSONA_ANAGRAFICA_FONIA",
+  "table_full_name": "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  matricola as matricola_estesa,\n        cast(nullif(regexp_replace(matricola, '([A-Z]+)([0-9]+)', '$2'), '') AS INT) as matricola,\n        nome,\n        cognome,\n        TO_DATE('', 'YYYY-MM-DD', 1) as data_nascita,\n        codice_fiscale,\n        '' AS sesso,\n        cast(null as int) as codice_cittadino,\n        'fonia' AS provenienza\n        \nFROM (     \n    SELECT  t1.*\n    FROM (\n        SELECT id, codice_fiscale, cognome, matricola, nome\n        FROM fbk_test1__CORE_DATASET.FONIA_PERSONA) t1\n    INNER JOIN fbk_test1__CORE_DATASET.FONIA_TERMINALE_ASSEGNATO AS t2 ON t1.id = t2.persona_id\n    WHERE t2.data_fine_assegnazione_terminale > NOW()\n    UNION\n    SELECT  t1.*\n    FROM (\n        SELECT id, codice_fiscale, cognome, matricola, nome\n        FROM fbk_test1__CORE_DATASET.FONIA_PERSONA) t1\n    INNER JOIN fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA AS t2 ON t1.id = t2.persona_id\n    WHERE t2.data_fine_assegnazione_linea > NOW()\n)\nWHERE (cast(nullif(regexp_replace(matricola, '([A-Z]+)([0-9]+)', '$2'), '') AS INT) NOT IN (\n                    SELECT  matricola\n                    FROM    fbk_test1__CORE_DATASET.S1P_ANAGRAFICA \n                    UNION\n                    SELECT  matricola \n                    FROM    fbk_test1__CORE_DATASET.RCE_ANAGRAFICA) OR\n        matricola IS NULL)",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA",
+    "fbk_test1__CORE_DATASET.FONIA_PERSONA",
+    "fbk_test1__CORE_DATASET.FONIA_TERMINALE_ASSEGNATO",
+    "fbk_test1__CORE_DATASET.RCE_ANAGRAFICA",
+    "fbk_test1__CORE_DATASET.S1P_ANAGRAFICA"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "nome",
+        "description": "Nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "cognome",
+        "description": "Cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_nascita",
+        "description": "Data nascita",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_fiscale",
+        "description": "Codice fiscale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "sesso",
+        "description": "Sesso",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_cittadino",
+        "description": "Codice cittadino",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "provenienza",
+        "description": "Provenienza",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

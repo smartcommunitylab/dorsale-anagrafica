@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_ANAGRAFICA",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_ANAGRAFICA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  matricola_estesa,\n        matricola,\n        nome,\n        cognome,\n        CAST(data_nascita AS TIMESTAMP) AS data_nascita,\n        eta,\n        range_eta,\n        codice_fiscale,\n        sesso,\n        codice_cittadino,\n        provenienza\nFROM    fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA\nORDER BY matricola_estesa ASC",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "anagrafica",
+  "dss_endpoint": "/anagrafica",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_CATEGORIA_ORARIO",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_CATEGORIA_ORARIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(FLOOR(C_ENTE) as INTEGER) AS codice_ente, CAST(FLOOR(C_MATRI) as INTEGER) AS matricola, CAST(DI_EVENTO as DATE) AS data_inizio_assegnazione_categoria_orario, CAST(DF_EVENTO as DATE) AS data_fine_assegnazione_categoria_orario, X_TPEVEN AS tipo_assegnazione_orario, CAST(C_SPEVEN as VARCHAR) AS codice_categoria_orario, CAST(TS_INSERIM AS DATE) AS data_inserimento_categoria_orario, CAST(TS_APPLICA AS DATE) AS data_applicazione_categoria_orario\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_cat_orario.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_CATEGORIA_ORARIO"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

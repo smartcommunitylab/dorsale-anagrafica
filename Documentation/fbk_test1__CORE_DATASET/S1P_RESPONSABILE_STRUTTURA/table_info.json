@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_RESPONSABILE_STRUTTURA",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_RESPONSABILE_STRUTTURA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  codice_struttura, \n        codice_ente, \n        matricola, \n        incarico_funzionale, \n        data_inizio_responsabile, \n        CASE \n            WHEN data_fine_responsabile = '3000-12-31' THEN DATE '2999-12-31'\n            ELSE data_fine_responsabile\n        END AS data_fine_responsabile\nFROM (\n    SELECT  C_STRUTTURA AS codice_struttura,\n\t        CAST(C_ENTE AS INT) AS codice_ente,\n            CAST(C_MATRI AS INT) AS matricola,\n            X_SPEVEN AS incarico_funzionale,\n            CAST(DKIVAL AS DATE) AS data_inizio_responsabile,\n            CAST(DFVAL AS DATE) AS data_fine_responsabile\n    FROM    \"s1ps_dorsale_responsabili.xlsx\"\n)",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.STRUTTURA_RESPONSABILE_ASSEGNAZIONE_STRUTTURA"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

@@ -1,0 +1,88 @@
+{
+  "table_space": "fbk_test1__MASTER_DATA",
+  "table_name": "STRUTTURA_BASE",
+  "table_full_name": "fbk_test1__MASTER_DATA.STRUTTURA_BASE",
+  "table_version": "1.0",
+  "table_definition": "SELECT  *,\n        ROW_NUMBER() OVER (ORDER BY codice_struttura) AS id_struttura\nFROM    (\n    SELECT  DISTINCT codice_struttura,\n            tipo_struttura,\n            descrizione_struttura,\n            livello_struttura,\n            data_inizio_struttura_base AS data_inizio_struttura,\n            data_fine_struttura_base AS data_fine_struttura\n    FROM    fbk_test1__CORE_DATASET.S1P_GERARCHIA\n    ORDER BY codice_struttura\n)",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_GERARCHIA"
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_LINEA",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_TERMINALE",
+    "fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA",
+    "fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA",
+    "fbk_test1__MASTER_DATA.STRUTTURA_RESPONSABILE_ASSEGNAZIONE_STRUTTURA",
+    "fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA",
+    "fbk_test1__VISUALIZATION_TABLES.STRUTTURA_BASE"
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_struttura",
+        "description": "Codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_struttura",
+        "description": "Tipo struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_struttura",
+        "description": "Descrizione struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "livello_struttura",
+        "description": "Livello struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_struttura",
+        "description": "Data inizio struttura",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_struttura",
+        "description": "Data fine struttura",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

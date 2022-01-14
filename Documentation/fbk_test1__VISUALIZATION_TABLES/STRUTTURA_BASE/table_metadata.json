@@ -1,0 +1,82 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "STRUTTURA_BASE",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.STRUTTURA_BASE",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_struttura, tipo_struttura, descrizione_struttura, livello_struttura, CAST(data_inizio_struttura AS TIMESTAMP) AS data_inizio_struttura, CAST(data_fine_struttura AS TIMESTAMP) AS data_fine_struttura, id_struttura\nFROM fbk_test1__MASTER_DATA.STRUTTURA_BASE",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.STRUTTURA_BASE"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "strutture_base",
+  "dss_endpoint": "/organigramma",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_struttura",
+        "description": "Codice struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_struttura",
+        "description": "Tipo struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_struttura",
+        "description": "Descrizione struttura",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "livello_struttura",
+        "description": "Livello struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_struttura",
+        "description": "Data inizio struttura",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_struttura",
+        "description": "Data fine struttura",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

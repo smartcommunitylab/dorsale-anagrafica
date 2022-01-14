@@ -1,0 +1,23 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_LINEA",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_LINEA",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(id, 1, 1, 0) AS id, numero_telefono, stato as stato_linea, CONVERT_TO_INTEGER(contratto_id, 1, 1, 0) AS contratto_id, CONVERT_TO_INTEGER(tipologia_id, 1, 1, 0) AS tipologia_id, TO_DATE(data_primo_inserimento, 'YYYY-MM-DD', 1) AS data_primo_inserimento, TO_DATE(data_ultima_modifica, 'YYYY-MM-DD', 1) AS data_ultima_modifica\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_linea.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

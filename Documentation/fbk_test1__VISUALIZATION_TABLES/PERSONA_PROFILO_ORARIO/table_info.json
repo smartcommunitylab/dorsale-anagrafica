@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "PERSONA_PROFILO_ORARIO",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.PERSONA_PROFILO_ORARIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_categoria_orario, descrizione_profilo_orario, c_numcicl, codice_profilo_orario, ora_inizio_fascia, ora_fine_fascia, flessibilita_obbligatoria\nFROM fbk_test1__CORE_DATASET.S1P_PROFILO_ORARIO",
+  "table_parents": [
+    "fbk_test1__CORE_DATASET.S1P_PROFILO_ORARIO"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "profilo_orario",
+  "dss_endpoint": "/profilo-orario",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

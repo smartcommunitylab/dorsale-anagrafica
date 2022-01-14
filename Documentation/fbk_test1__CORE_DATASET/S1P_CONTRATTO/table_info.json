@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_CONTRATTO",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_CONTRATTO",
+  "table_version": "1.0",
+  "table_definition": "SELECT codice_ente, matricola, data_inizio_rapporto, COALESCE(data_fine_rapporto, DATE '2999-12-31') AS data_fine_rapporto, tipo_rapporto, codice_area_contrattuale_rapporto, descrizione_area_contrattuale_rapporto, data_inserimento_rapporto, data_applicazione_rapporto\nFROM (\n  SELECT CAST(FLOOR(\"s1ps_dorsale_rapporti.xlsx\".C_ENTE) AS INTEGER) AS codice_ente, CAST(FLOOR(\"s1ps_dorsale_rapporti.xlsx\".C_MATRI) AS INTEGER) AS matricola, CAST(\"s1ps_dorsale_rapporti.xlsx\".DI_EVENTO AS DATE) AS data_inizio_rapporto, CAST(\"s1ps_dorsale_rapporti.xlsx\".DF_MOVDEF AS DATE) AS data_fine_rapporto, X_TPEVEN AS tipo_rapporto, CAST(\"s1ps_dorsale_rapporti.xlsx\".C_FIRSTARC AS INTEGER) AS codice_area_contrattuale_rapporto, X_ARCONTR AS descrizione_area_contrattuale_rapporto, CAST(\"s1ps_dorsale_rapporti.xlsx\".TS_INSERIM AS DATE) AS data_inserimento_rapporto, CAST(\"s1ps_dorsale_rapporti.xlsx\".TS_APPLICA AS DATE) AS data_applicazione_rapporto\n  FROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_rapporti.xlsx\" AS \"s1ps_dorsale_rapporti.xlsx\"\n)",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_CONTRATTO"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

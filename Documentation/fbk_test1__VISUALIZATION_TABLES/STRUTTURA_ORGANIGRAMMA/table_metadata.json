@@ -1,0 +1,82 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "STRUTTURA_ORGANIGRAMMA",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.STRUTTURA_ORGANIGRAMMA",
+  "table_version": "1.0",
+  "table_definition": "SELECT  CAST(data_inizio_struttura_calcolata AS TIMESTAMP) AS data_inizio_gerarchia, \n        CAST(data_fine_struttura_calcolata AS TIMESTAMP) AS data_fine_gerarchia,\n        tipo_struttura_superiore, \n        codice_struttura_superiore, \n        descrizione_struttura_superiore, \n        livello_struttura_superiore,\n        id_struttura\nFROM    fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "strutture_gerarchia",
+  "dss_endpoint": "/gerarchia",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "data_inizio_gerarchia",
+        "description": "Data inizio gerarchia",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_gerarchia",
+        "description": "Data fine gerarchia",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "tipo_struttura_superiore",
+        "description": "Tipo struttura superiore",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_struttura_superiore",
+        "description": "Codice struttura superiore",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_struttura_superiore",
+        "description": "Descrizione struttura superiore",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "livello_struttura_superiore",
+        "description": "Livello struttura superiore",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

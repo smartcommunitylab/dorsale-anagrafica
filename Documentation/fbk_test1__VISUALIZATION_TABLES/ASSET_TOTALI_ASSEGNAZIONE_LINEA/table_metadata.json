@@ -1,0 +1,131 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_TOTALI_ASSEGNAZIONE_LINEA",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSEGNAZIONE_LINEA",
+  "table_version": "1.0",
+  "table_definition": "SELECT id_assegnazione_linea, CAST(data_inizio_assegnazione_linea AS TIMESTAMP) AS data_inizio_assegnazione_linea,\nCAST(data_fine_assegnazione_linea AS TIMESTAMP) AS data_fine_assegnazione_linea, linea_is_personale, causale_ritiro, codice_struttura_fonia, matricola, matricola_estesa, codice_fiscale, descrizione_gruppo, descrizione_tipologia_linea, id_struttura, linea_id\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA\nUNION\nSELECT id_assegnazione_linea, CAST(data_inizio_assegnazione_linea AS TIMESTAMP) AS data_inizio_assegnazione_linea,\nCAST(data_fine_assegnazione_linea AS TIMESTAMP) AS data_fine_assegnazione_linea, linea_is_personale, causale_ritiro, codice_struttura_fonia, matricola, matricola_estesa, codice_fiscale, descrizione_gruppo, descrizione_tipologia_linea, id_struttura, linea_id\nFROM fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_LINEA",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_LINEA"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "asset_totali_assegnazione_linea",
+  "dss_endpoint": "/asset-totali-assegnazione-linea",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "id_assegnazione_linea",
+        "description": "Id assegnazione linea",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_assegnazione_linea",
+        "description": "Data inizio assegnazione linea",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_assegnazione_linea",
+        "description": "Data fine assegnazione linea",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "linea_is_personale",
+        "description": "Linea is personale",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "causale_ritiro",
+        "description": "Causale ritiro",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_struttura_fonia",
+        "description": "Codice struttura fonia",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_fiscale",
+        "description": "Codice fiscale",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_gruppo",
+        "description": "Descrizione gruppo",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_tipologia_linea",
+        "description": "Descrizione tipologia linea",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "id_struttura",
+        "description": "Id struttura",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "linea_id",
+        "description": "Linea id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

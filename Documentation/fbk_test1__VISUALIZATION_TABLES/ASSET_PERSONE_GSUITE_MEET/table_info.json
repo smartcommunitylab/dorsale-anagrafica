@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_GSUITE_MEET",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_MEET",
+  "table_version": "1.0",
+  "table_definition": "SELECT gsuite_data_meet, gsuite_codice_meet, gsuite_mail_istituzionale, gsuite_durata_meet, gsuite_paese, larghezza_banda_caricamento_kbps, larghezza_banda_download_kbps\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_GSUITE_MEET",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_GSUITE_MEET"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "gsuite_meet",
+  "dss_endpoint": "/gsuite-meet",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": ""
+}

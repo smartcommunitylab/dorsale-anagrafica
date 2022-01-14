@@ -1,0 +1,22 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "BMC_INCIDENT",
+  "table_full_name": "fbk_test1__CORE_DATASET.BMC_INCIDENT",
+  "table_version": "1.0",
+  "table_definition": "SELECT bmc_incident, bmc_company, bmc_direct_contact_organization, bmc_direct_contact_departement, UPPER(bmc_direct_contact_person_id) AS bmc_direct_contact_person_id, bmc_nome, bmc_cognome, bmc_servizio, bmc_status, TO_TIMESTAMP(bmc_data_submission, 'YYYY-MM-DD HH24:MI:SS', 1) AS bmc_data_submission, TO_TIMESTAMP(bmc_data_risoluzione, 'YYYY-MM-DD HH24:MI:SS', 1) AS bmc_data_risoluzione, bmc_sommario, bmc_note, bmc_risoluzione\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.BMC",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_BMC_INCIDENT"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "BMC",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": ""
+}

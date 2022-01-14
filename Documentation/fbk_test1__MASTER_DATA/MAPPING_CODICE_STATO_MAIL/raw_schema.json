@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "codice_stato_mail",
+      "description": "Codice stato mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "descrizione_stato_mail",
+      "description": "Descrizione stato mail",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

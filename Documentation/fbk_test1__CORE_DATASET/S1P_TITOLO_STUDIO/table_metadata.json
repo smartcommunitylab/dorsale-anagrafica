@@ -1,0 +1,66 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_TITOLO_STUDIO",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_TITOLO_STUDIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT CAST(FLOOR(C_ENTE) as INTEGER) AS codice_ente, CAST(FLOOR(C_MATRI) as INTEGER) AS matricola, CAST(DI_EVENTO as DATE) AS data_inizio_titolo_studio, C_SPEVEN AS codice_titolo_studio, X_SPEVEN AS descrizione_titolo_studio\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_tit_studio.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.PERSONA_TITOLO_STUDIO"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_ente",
+        "description": "Codice ente",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola",
+        "description": "Matricola",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_titolo_studio",
+        "description": "Data inizio titolo studio",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_titolo_studio",
+        "description": "Codice titolo studio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_titolo_studio",
+        "description": "Descrizione titolo studio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

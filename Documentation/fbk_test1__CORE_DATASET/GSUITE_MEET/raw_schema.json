@@ -1,0 +1,60 @@
+{
+  "fields": [
+    {
+      "name": "gsuite_data_meet",
+      "description": "Gsuite data meet",
+      "type": "date",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_codice_meet",
+      "description": "Gsuite codice meet",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_mail_istituzionale",
+      "description": "Gsuite mail istituzionale",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_durata_meet",
+      "description": "Gsuite durata meet",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "gsuite_paese",
+      "description": "Gsuite paese",
+      "type": "string",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "larghezza_banda_caricamento_kbps",
+      "description": "Larghezza banda caricamento kbps",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    },
+    {
+      "name": "larghezza_banda_download_kbps",
+      "description": "Larghezza banda download kbps",
+      "type": "integer",
+      "constraints": {},
+      "rdfType": "",
+      "errors": {}
+    }
+  ]
+}

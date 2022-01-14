@@ -1,0 +1,138 @@
+{
+  "table_space": "fbk_test1__VISUALIZATION_TABLES",
+  "table_name": "ASSET_PERSONE_BMC_INCIDENT",
+  "table_full_name": "fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_BMC_INCIDENT",
+  "table_version": "1.0",
+  "table_definition": "SELECT  bmc_incident, bmc_company, bmc_direct_contact_organization, bmc_direct_contact_departement, bmc_nome, bmc_cognome, bmc_servizio, bmc_status, CAST(bmc_data_submission AS TIMESTAMP) AS bmc_data_submission,\nCAST(bmc_data_risoluzione AS TIMESTAMP) AS bmc_data_risoluzione, bmc_sommario, bmc_note, bmc_risoluzione, matricola_estesa\nFROM fbk_test1__MASTER_DATA.ASSET_PERSONE_BMC_INCIDENT",
+  "table_parents": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_BMC_INCIDENT"
+  ],
+  "table_children": [
+    ""
+  ],
+  "core_dataset": false,
+  "origin_dataset": "",
+  "require_validation": false,
+  "dss_exposed": true,
+  "dss_query_name": "bmc_incident",
+  "dss_endpoint": "/bmc-incident",
+  "format_exposed": "JSON",
+  "format_authentication": "Bearer token",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "bmc_incident",
+        "description": "Bmc incident",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_company",
+        "description": "Bmc company",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_direct_contact_organization",
+        "description": "Bmc direct contact organization",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_direct_contact_departement",
+        "description": "Bmc direct contact departement",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_nome",
+        "description": "Bmc nome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_cognome",
+        "description": "Bmc cognome",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_servizio",
+        "description": "Bmc servizio",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_status",
+        "description": "Bmc status",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_data_submission",
+        "description": "Bmc data submission",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_data_risoluzione",
+        "description": "Bmc data risoluzione",
+        "type": "datetime",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_sommario",
+        "description": "Bmc sommario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_note",
+        "description": "Bmc note",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "bmc_risoluzione",
+        "description": "Bmc risoluzione",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "matricola_estesa",
+        "description": "Matricola estesa",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "S1P_PROFILO_ORARIO",
+  "table_full_name": "fbk_test1__CORE_DATASET.S1P_PROFILO_ORARIO",
+  "table_version": "1.0",
+  "table_definition": "SELECT C_SPEVEN AS codice_categoria_orario, X_SPEVEN AS descrizione_profilo_orario, CAST(C_NUMCICL as INTEGER) AS c_numcicl, CAST(C_SPEVEN1 AS VARCHAR) AS codice_profilo_orario, TO_TIME(QI_RANGE, 'HH24:MI', 1) AS ora_inizio_fascia, TO_TIME(QF_RANGE, 'HH24:MI', 1) AS ora_fine_fascia, Z_CHAR1 AS flessibilita_obbligatoria\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.S1P.\"s1ps_dorsale_prof_orario.xlsx\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__VISUALIZATION_TABLES.PERSONA_PROFILO_ORARIO"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "S1P",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "codice_categoria_orario",
+        "description": "Codice categoria orario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_profilo_orario",
+        "description": "Descrizione profilo orario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "c_numcicl",
+        "description": "C numcicl",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_profilo_orario",
+        "description": "Codice profilo orario",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "ora_inizio_fascia",
+        "description": "Ora inizio fascia",
+        "type": "time",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "ora_fine_fascia",
+        "description": "Ora fine fascia",
+        "type": "time",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "flessibilita_obbligatoria",
+        "description": "Flessibilita obbligatoria",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "table_space": "fbk_test1__CORE_DATASET",
+  "table_name": "FONIA_CONTRATTO",
+  "table_full_name": "fbk_test1__CORE_DATASET.FONIA_CONTRATTO",
+  "table_version": "1.0",
+  "table_definition": "SELECT CONVERT_TO_INTEGER(\"fonia_contratto.csv\".\"id\", 1, 1, 0) AS id, TO_DATE(\"fonia_contratto.csv\".\"data_primo_inserimento\", 'YYYY-MM-DD', 1) AS data_primo_inserimento, TO_DATE(\"fonia_contratto.csv\".\"data_ultima_modifica\", 'YYYY-MM-DD', 1) AS data_ultima_modifica, TO_DATE(\"fonia_contratto.csv\".\"data_fine\", 'YYYY-MM-DD', 1) AS data_fine_contratto, TO_DATE(data_inizio, 'YYYY-MM-DD', 1) AS data_inizio_contratto, codice_riferimento AS codice_riferimento_contratto, descrizione AS descrizione_contratto, operatore, referente AS referente_contratto, CONVERT_TO_INTEGER(CASE\n  WHEN CASE\n  WHEN ricaricabile = 'false' THEN '0'\n  ELSE ricaricabile\nEND = 'true' THEN '1'\n  ELSE CASE\n  WHEN ricaricabile = 'false' THEN '0'\n  ELSE ricaricabile\nEND\nEND, 1, 1, 0) AS ricaricabile\nFROM fbk_test1__Dorsale.\"fbktest1-3mrifs\".dorsale.FONIA.\"fonia_contratto.csv\" AS \"fonia_contratto.csv\"",
+  "table_parents": [
+    ""
+  ],
+  "table_children": [
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI",
+    "fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI"
+  ],
+  "core_dataset": true,
+  "origin_dataset": "FONIA",
+  "require_validation": true,
+  "dss_exposed": false,
+  "dss_query_name": "",
+  "dss_endpoint": "",
+  "format_exposed": "",
+  "format_authentication": "",
+  "table_description": "",
+  "table_schema": {
+    "fields": [
+      {
+        "name": "id",
+        "description": "Id",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_primo_inserimento",
+        "description": "Data primo inserimento",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_ultima_modifica",
+        "description": "Data ultima modifica",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_fine_contratto",
+        "description": "Data fine contratto",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "data_inizio_contratto",
+        "description": "Data inizio contratto",
+        "type": "date",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "codice_riferimento_contratto",
+        "description": "Codice riferimento contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "descrizione_contratto",
+        "description": "Descrizione contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "operatore",
+        "description": "Operatore",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "referente_contratto",
+        "description": "Referente contratto",
+        "type": "string",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      },
+      {
+        "name": "ricaricabile",
+        "description": "Ricaricabile",
+        "type": "integer",
+        "constraints": {},
+        "rdfType": "",
+        "errors": {}
+      }
+    ]
+  }
+}
