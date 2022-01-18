@@ -2,25 +2,25 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                         |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | RCE_ANAGRAFICA                                                                                                                      |
-| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                             |
-| Nome completo            | fbk_test1__CORE_DATASET.RCE_ANAGRAFICA                                                                                              |
-| Descrizione tabella      |                                                                                                                                     |
-| Versione                 | 1.0                                                                                                                                 |
-| Core dataset             | True                                                                                                                                |
-| Dataset di origine       | RCE                                                                                                                                 |
-| Richiede validazione     | True                                                                                                                                |
-| Esposta in DSS           | False                                                                                                                               |
-| Endpoint DSS             |                                                                                                                                     |
-| Query name DSS           |                                                                                                                                     |
-| Formato esposizione      |                                                                                                                                     |
-| Tipologia autenticazione |                                                                                                                                     |
-| Tabelle genitrici        |                                                                                                                                     |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA](/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_FONIA/markdown.md)                     |
-|                          | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE](/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_RCE/markdown.md)                         |
-|                          | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE](/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA_RCE/markdown.md) |
+| Info                     | Descrizione                                                                                                                                       |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | RCE_ANAGRAFICA                                                                                                                                    |
+| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                                           |
+| Nome completo            | fbk_test1__CORE_DATASET.RCE_ANAGRAFICA                                                                                                            |
+| Descrizione tabella      |                                                                                                                                                   |
+| Versione                 | 1.0                                                                                                                                               |
+| Core dataset             | True                                                                                                                                              |
+| Dataset di origine       | RCE                                                                                                                                               |
+| Richiede validazione     | True                                                                                                                                              |
+| Esposta in DSS           | False                                                                                                                                             |
+| Endpoint DSS             |                                                                                                                                                   |
+| Query name DSS           |                                                                                                                                                   |
+| Formato esposizione      |                                                                                                                                                   |
+| Tipologia autenticazione |                                                                                                                                                   |
+| Tabelle genitrici        |                                                                                                                                                   |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_FONIA/markdown.md)                     |
+|                          | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_RCE/markdown.md)                         |
+|                          | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA_RCE/markdown.md) |
 
 ## Struttura relazionale
 

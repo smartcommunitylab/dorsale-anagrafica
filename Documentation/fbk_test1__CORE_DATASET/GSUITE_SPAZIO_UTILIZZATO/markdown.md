@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                                                   |
-|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | GSUITE_SPAZIO_UTILIZZATO                                                                                                                                      |
-| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                                                       |
-| Nome completo            | fbk_test1__CORE_DATASET.GSUITE_SPAZIO_UTILIZZATO                                                                                                              |
-| Descrizione tabella      |                                                                                                                                                               |
-| Versione                 | 1.0                                                                                                                                                           |
-| Core dataset             | True                                                                                                                                                          |
-| Dataset di origine       | GSUITE                                                                                                                                                        |
-| Richiede validazione     | True                                                                                                                                                          |
-| Esposta in DSS           | False                                                                                                                                                         |
-| Endpoint DSS             |                                                                                                                                                               |
-| Query name DSS           |                                                                                                                                                               |
-| Formato esposizione      |                                                                                                                                                               |
-| Tipologia autenticazione |                                                                                                                                                               |
-| Tabelle genitrici        |                                                                                                                                                               |
-| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_SPAZIO_UTILIZZATO](/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_GSUITE_SPAZIO_UTILIZZATO/markdown.md) |
+| Info                     | Descrizione                                                                                                                                                                 |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | GSUITE_SPAZIO_UTILIZZATO                                                                                                                                                    |
+| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                                                                     |
+| Nome completo            | fbk_test1__CORE_DATASET.GSUITE_SPAZIO_UTILIZZATO                                                                                                                            |
+| Descrizione tabella      |                                                                                                                                                                             |
+| Versione                 | 1.0                                                                                                                                                                         |
+| Core dataset             | True                                                                                                                                                                        |
+| Dataset di origine       | GSUITE                                                                                                                                                                      |
+| Richiede validazione     | True                                                                                                                                                                        |
+| Esposta in DSS           | False                                                                                                                                                                       |
+| Endpoint DSS             |                                                                                                                                                                             |
+| Query name DSS           |                                                                                                                                                                             |
+| Formato esposizione      |                                                                                                                                                                             |
+| Tipologia autenticazione |                                                                                                                                                                             |
+| Tabelle genitrici        |                                                                                                                                                                             |
+| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_SPAZIO_UTILIZZATO](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_GSUITE_SPAZIO_UTILIZZATO/markdown.md) |
 
 ## Struttura relazionale
 

@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                           |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_TELELAVORO                                                                                                    |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                |
-| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_TELELAVORO                                                                             |
-| Descrizione tabella      |                                                                                                                       |
-| Versione                 | 1.0                                                                                                                   |
-| Core dataset             | False                                                                                                                 |
-| Dataset di origine       |                                                                                                                       |
-| Richiede validazione     | False                                                                                                                 |
-| Esposta in DSS           | False                                                                                                                 |
-| Endpoint DSS             |                                                                                                                       |
-| Query name DSS           |                                                                                                                       |
-| Formato esposizione      |                                                                                                                       |
-| Tipologia autenticazione |                                                                                                                       |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_TELELAVORO](/fbk_test1__CORE_DATASET/S1P_TELELAVORO/markdown.md)                         |
-|                          | [fbk_test1__MASTER_DATA.MAPPING_ENTE](/fbk_test1__MASTER_DATA/MAPPING_ENTE/markdown.md)                               |
-| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.PERSONA_TELELAVORO](/fbk_test1__VISUALIZATION_TABLES/PERSONA_TELELAVORO/markdown.md) |
+| Info                     | Descrizione                                                                                                                         |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_TELELAVORO                                                                                                                  |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                              |
+| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_TELELAVORO                                                                                           |
+| Descrizione tabella      |                                                                                                                                     |
+| Versione                 | 1.0                                                                                                                                 |
+| Core dataset             | False                                                                                                                               |
+| Dataset di origine       |                                                                                                                                     |
+| Richiede validazione     | True                                                                                                                                |
+| Esposta in DSS           | False                                                                                                                               |
+| Endpoint DSS             |                                                                                                                                     |
+| Query name DSS           |                                                                                                                                     |
+| Formato esposizione      |                                                                                                                                     |
+| Tipologia autenticazione |                                                                                                                                     |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_TELELAVORO](/Documentation/fbk_test1__CORE_DATASET/S1P_TELELAVORO/markdown.md)                         |
+|                          | [fbk_test1__MASTER_DATA.MAPPING_ENTE](/Documentation/fbk_test1__MASTER_DATA/MAPPING_ENTE/markdown.md)                               |
+| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.PERSONA_TELELAVORO](/Documentation/fbk_test1__VISUALIZATION_TABLES/PERSONA_TELELAVORO/markdown.md) |
 
 ## Struttura relazionale
 

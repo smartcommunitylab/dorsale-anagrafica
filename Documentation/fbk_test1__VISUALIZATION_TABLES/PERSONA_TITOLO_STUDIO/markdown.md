@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                               |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_TITOLO_STUDIO                                                                                     |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                           |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_TITOLO_STUDIO                                                     |
-| Descrizione tabella      |                                                                                                           |
-| Versione                 | 1.0                                                                                                       |
-| Core dataset             | False                                                                                                     |
-| Dataset di origine       |                                                                                                           |
-| Richiede validazione     | False                                                                                                     |
-| Esposta in DSS           | True                                                                                                      |
-| Endpoint DSS             | /titolo-studio                                                                                            |
-| Query name DSS           | titolo_studio                                                                                             |
-| Formato esposizione      | JSON                                                                                                      |
-| Tipologia autenticazione | Bearer token                                                                                              |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_TITOLO_STUDIO](/fbk_test1__MASTER_DATA/PERSONA_TITOLO_STUDIO/markdown.md) |
-| Tabelle figlie           |                                                                                                           |
+| Info                     | Descrizione                                                                                                             |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_TITOLO_STUDIO                                                                                                   |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                         |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_TITOLO_STUDIO                                                                   |
+| Descrizione tabella      |                                                                                                                         |
+| Versione                 | 1.0                                                                                                                     |
+| Core dataset             | False                                                                                                                   |
+| Dataset di origine       |                                                                                                                         |
+| Richiede validazione     | False                                                                                                                   |
+| Esposta in DSS           | True                                                                                                                    |
+| Endpoint DSS             | /titolo-studio                                                                                                          |
+| Query name DSS           | titolo_studio                                                                                                           |
+| Formato esposizione      | JSON                                                                                                                    |
+| Tipologia autenticazione | Bearer token                                                                                                            |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_TITOLO_STUDIO](/Documentation/fbk_test1__MASTER_DATA/PERSONA_TITOLO_STUDIO/markdown.md) |
+| Tabelle figlie           |                                                                                                                         |
 
 ## Struttura relazionale
 

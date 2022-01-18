@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                 |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | STRUTTURA_ORGANIGRAMMA                                                                                      |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                             |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.STRUTTURA_ORGANIGRAMMA                                                      |
-| Descrizione tabella      |                                                                                                             |
-| Versione                 | 1.0                                                                                                         |
-| Core dataset             | False                                                                                                       |
-| Dataset di origine       |                                                                                                             |
-| Richiede validazione     | False                                                                                                       |
-| Esposta in DSS           | True                                                                                                        |
-| Endpoint DSS             | /gerarchia                                                                                                  |
-| Query name DSS           | strutture_gerarchia                                                                                         |
-| Formato esposizione      | JSON                                                                                                        |
-| Tipologia autenticazione | Bearer token                                                                                                |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA](/fbk_test1__MASTER_DATA/STRUTTURA_ORGANIGRAMMA/markdown.md) |
-| Tabelle figlie           |                                                                                                             |
+| Info                     | Descrizione                                                                                                               |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | STRUTTURA_ORGANIGRAMMA                                                                                                    |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                           |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.STRUTTURA_ORGANIGRAMMA                                                                    |
+| Descrizione tabella      |                                                                                                                           |
+| Versione                 | 1.0                                                                                                                       |
+| Core dataset             | False                                                                                                                     |
+| Dataset di origine       |                                                                                                                           |
+| Richiede validazione     | False                                                                                                                     |
+| Esposta in DSS           | True                                                                                                                      |
+| Endpoint DSS             | /gerarchia                                                                                                                |
+| Query name DSS           | strutture_gerarchia                                                                                                       |
+| Formato esposizione      | JSON                                                                                                                      |
+| Tipologia autenticazione | Bearer token                                                                                                              |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA](/Documentation/fbk_test1__MASTER_DATA/STRUTTURA_ORGANIGRAMMA/markdown.md) |
+| Tabelle figlie           |                                                                                                                           |
 
 ## Struttura relazionale
 

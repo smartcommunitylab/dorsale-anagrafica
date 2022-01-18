@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                 |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | S1P_GERARCHIA                                                                                               |
-| Space Dremio             | fbk_test1__CORE_DATASET                                                                                     |
-| Nome completo            | fbk_test1__CORE_DATASET.S1P_GERARCHIA                                                                       |
-| Descrizione tabella      |                                                                                                             |
-| Versione                 | 1.0                                                                                                         |
-| Core dataset             | True                                                                                                        |
-| Dataset di origine       | S1P                                                                                                         |
-| Richiede validazione     | True                                                                                                        |
-| Esposta in DSS           | False                                                                                                       |
-| Endpoint DSS             |                                                                                                             |
-| Query name DSS           |                                                                                                             |
-| Formato esposizione      |                                                                                                             |
-| Tipologia autenticazione |                                                                                                             |
-| Tabelle genitrici        |                                                                                                             |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.STRUTTURA_BASE](/fbk_test1__MASTER_DATA/STRUTTURA_BASE/markdown.md)                 |
-|                          | [fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA](/fbk_test1__MASTER_DATA/STRUTTURA_ORGANIGRAMMA/markdown.md) |
+| Info                     | Descrizione                                                                                                               |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | S1P_GERARCHIA                                                                                                             |
+| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                   |
+| Nome completo            | fbk_test1__CORE_DATASET.S1P_GERARCHIA                                                                                     |
+| Descrizione tabella      |                                                                                                                           |
+| Versione                 | 1.0                                                                                                                       |
+| Core dataset             | True                                                                                                                      |
+| Dataset di origine       | S1P                                                                                                                       |
+| Richiede validazione     | True                                                                                                                      |
+| Esposta in DSS           | False                                                                                                                     |
+| Endpoint DSS             |                                                                                                                           |
+| Query name DSS           |                                                                                                                           |
+| Formato esposizione      |                                                                                                                           |
+| Tipologia autenticazione |                                                                                                                           |
+| Tabelle genitrici        |                                                                                                                           |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.STRUTTURA_BASE](/Documentation/fbk_test1__MASTER_DATA/STRUTTURA_BASE/markdown.md)                 |
+|                          | [fbk_test1__MASTER_DATA.STRUTTURA_ORGANIGRAMMA](/Documentation/fbk_test1__MASTER_DATA/STRUTTURA_ORGANIGRAMMA/markdown.md) |
 
 ## Struttura relazionale
 

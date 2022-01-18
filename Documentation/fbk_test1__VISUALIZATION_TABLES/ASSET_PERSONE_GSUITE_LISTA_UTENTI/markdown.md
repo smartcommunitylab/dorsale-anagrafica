@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                             |
-|:-------------------------|:--------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_PERSONE_GSUITE_LISTA_UTENTI                                                                       |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                         |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_LISTA_UTENTI                                       |
-| Descrizione tabella      |                                                                                                         |
-| Versione                 | 1.0                                                                                                     |
-| Core dataset             | False                                                                                                   |
-| Dataset di origine       |                                                                                                         |
-| Richiede validazione     | False                                                                                                   |
-| Esposta in DSS           | True                                                                                                    |
-| Endpoint DSS             | /gsuite-utenti                                                                                          |
-| Query name DSS           | gsuite_utenti                                                                                           |
-| Formato esposizione      | JSON                                                                                                    |
-| Tipologia autenticazione | Bearer token                                                                                            |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.GSUITE_LISTA_UTENTI](/fbk_test1__CORE_DATASET/GSUITE_LISTA_UTENTI/markdown.md) |
-| Tabelle figlie           |                                                                                                         |
+| Info                     | Descrizione                                                                                                           |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_PERSONE_GSUITE_LISTA_UTENTI                                                                                     |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                       |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_LISTA_UTENTI                                                     |
+| Descrizione tabella      |                                                                                                                       |
+| Versione                 | 1.0                                                                                                                   |
+| Core dataset             | False                                                                                                                 |
+| Dataset di origine       |                                                                                                                       |
+| Richiede validazione     | False                                                                                                                 |
+| Esposta in DSS           | True                                                                                                                  |
+| Endpoint DSS             | /gsuite-utenti                                                                                                        |
+| Query name DSS           | gsuite_utenti                                                                                                         |
+| Formato esposizione      | JSON                                                                                                                  |
+| Tipologia autenticazione | Bearer token                                                                                                          |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.GSUITE_LISTA_UTENTI](/Documentation/fbk_test1__CORE_DATASET/GSUITE_LISTA_UTENTI/markdown.md) |
+| Tabelle figlie           |                                                                                                                       |
 
 ## Struttura relazionale
 

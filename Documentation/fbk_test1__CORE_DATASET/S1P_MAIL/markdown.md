@@ -2,25 +2,25 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                               |
-|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | S1P_MAIL                                                                                                                  |
-| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                   |
-| Nome completo            | fbk_test1__CORE_DATASET.S1P_MAIL                                                                                          |
-| Descrizione tabella      |                                                                                                                           |
-| Versione                 | 1.0                                                                                                                       |
-| Core dataset             | True                                                                                                                      |
-| Dataset di origine       | S1P                                                                                                                       |
-| Richiede validazione     | True                                                                                                                      |
-| Esposta in DSS           | False                                                                                                                     |
-| Endpoint DSS             |                                                                                                                           |
-| Query name DSS           |                                                                                                                           |
-| Formato esposizione      |                                                                                                                           |
-| Tipologia autenticazione |                                                                                                                           |
-| Tabelle genitrici        |                                                                                                                           |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL](/fbk_test1__MASTER_DATA/MAPPING_CODICE_STATO_MAIL/markdown.md)         |
-|                          | [fbk_test1__MASTER_DATA.MAPPING_CODICE_TIPOLOGIA_MAIL](/fbk_test1__MASTER_DATA/MAPPING_CODICE_TIPOLOGIA_MAIL/markdown.md) |
-|                          | [fbk_test1__MASTER_DATA.PERSONA_MAIL](/fbk_test1__MASTER_DATA/PERSONA_MAIL/markdown.md)                                   |
+| Info                     | Descrizione                                                                                                                             |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | S1P_MAIL                                                                                                                                |
+| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                                 |
+| Nome completo            | fbk_test1__CORE_DATASET.S1P_MAIL                                                                                                        |
+| Descrizione tabella      |                                                                                                                                         |
+| Versione                 | 1.0                                                                                                                                     |
+| Core dataset             | True                                                                                                                                    |
+| Dataset di origine       | S1P                                                                                                                                     |
+| Richiede validazione     | True                                                                                                                                    |
+| Esposta in DSS           | False                                                                                                                                   |
+| Endpoint DSS             |                                                                                                                                         |
+| Query name DSS           |                                                                                                                                         |
+| Formato esposizione      |                                                                                                                                         |
+| Tipologia autenticazione |                                                                                                                                         |
+| Tabelle genitrici        |                                                                                                                                         |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL](/Documentation/fbk_test1__MASTER_DATA/MAPPING_CODICE_STATO_MAIL/markdown.md)         |
+|                          | [fbk_test1__MASTER_DATA.MAPPING_CODICE_TIPOLOGIA_MAIL](/Documentation/fbk_test1__MASTER_DATA/MAPPING_CODICE_TIPOLOGIA_MAIL/markdown.md) |
+|                          | [fbk_test1__MASTER_DATA.PERSONA_MAIL](/Documentation/fbk_test1__MASTER_DATA/PERSONA_MAIL/markdown.md)                                   |
 
 ## Struttura relazionale
 

@@ -2,29 +2,29 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                                                       |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI                                                                                                                          |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                                            |
-| Nome completo            | fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI                                                                                                   |
-| Descrizione tabella      |                                                                                                                                                                   |
-| Versione                 | 1.0                                                                                                                                                               |
-| Core dataset             | False                                                                                                                                                             |
-| Dataset di origine       |                                                                                                                                                                   |
-| Richiede validazione     | False                                                                                                                                                             |
-| Esposta in DSS           | False                                                                                                                                                             |
-| Endpoint DSS             |                                                                                                                                                                   |
-| Query name DSS           |                                                                                                                                                                   |
-| Formato esposizione      |                                                                                                                                                                   |
-| Tipologia autenticazione |                                                                                                                                                                   |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.FONIA_CONTRATTO](/fbk_test1__CORE_DATASET/FONIA_CONTRATTO/markdown.md)                                                                   |
-|                          | [fbk_test1__CORE_DATASET.FONIA_LINEA](/fbk_test1__CORE_DATASET/FONIA_LINEA/markdown.md)                                                                           |
-|                          | [fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA](/fbk_test1__CORE_DATASET/FONIA_LINEA_ASSEGNATA/markdown.md)                                                       |
-|                          | [fbk_test1__CORE_DATASET.FONIA_SERVIZIO](/fbk_test1__CORE_DATASET/FONIA_SERVIZIO/markdown.md)                                                                     |
-|                          | [fbk_test1__CORE_DATASET.FONIA_SERVIZIO_ASSEGNATO](/fbk_test1__CORE_DATASET/FONIA_SERVIZIO_ASSEGNATO/markdown.md)                                                 |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI](/fbk_test1__MASTER_DATA/ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md)                     |
-|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI](/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md) |
-|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI](/fbk_test1__VISUALIZATION_TABLES/ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md)   |
+| Info                     | Descrizione                                                                                                                                                                     |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI                                                                                                                                        |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                                                          |
+| Nome completo            | fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI                                                                                                                 |
+| Descrizione tabella      |                                                                                                                                                                                 |
+| Versione                 | 1.0                                                                                                                                                                             |
+| Core dataset             | False                                                                                                                                                                           |
+| Dataset di origine       |                                                                                                                                                                                 |
+| Richiede validazione     | True                                                                                                                                                                            |
+| Esposta in DSS           | False                                                                                                                                                                           |
+| Endpoint DSS             |                                                                                                                                                                                 |
+| Query name DSS           |                                                                                                                                                                                 |
+| Formato esposizione      |                                                                                                                                                                                 |
+| Tipologia autenticazione |                                                                                                                                                                                 |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.FONIA_CONTRATTO](/Documentation/fbk_test1__CORE_DATASET/FONIA_CONTRATTO/markdown.md)                                                                   |
+|                          | [fbk_test1__CORE_DATASET.FONIA_LINEA](/Documentation/fbk_test1__CORE_DATASET/FONIA_LINEA/markdown.md)                                                                           |
+|                          | [fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA](/Documentation/fbk_test1__CORE_DATASET/FONIA_LINEA_ASSEGNATA/markdown.md)                                                       |
+|                          | [fbk_test1__CORE_DATASET.FONIA_SERVIZIO](/Documentation/fbk_test1__CORE_DATASET/FONIA_SERVIZIO/markdown.md)                                                                     |
+|                          | [fbk_test1__CORE_DATASET.FONIA_SERVIZIO_ASSEGNATO](/Documentation/fbk_test1__CORE_DATASET/FONIA_SERVIZIO_ASSEGNATO/markdown.md)                                                 |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI](/Documentation/fbk_test1__MASTER_DATA/ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md)                     |
+|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md) |
+|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md)   |
 
 ## Struttura relazionale
 

@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                       |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_PERSONE_GSUITE_MEET                                                                                         |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                   |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_MEET                                                         |
-| Descrizione tabella      |                                                                                                                   |
-| Versione                 | 1.0                                                                                                               |
-| Core dataset             | False                                                                                                             |
-| Dataset di origine       |                                                                                                                   |
-| Richiede validazione     | False                                                                                                             |
-| Esposta in DSS           | True                                                                                                              |
-| Endpoint DSS             | /gsuite-meet                                                                                                      |
-| Query name DSS           | gsuite_meet                                                                                                       |
-| Formato esposizione      | JSON                                                                                                              |
-| Tipologia autenticazione | Bearer token                                                                                                      |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_GSUITE_MEET](/fbk_test1__MASTER_DATA/ASSET_PERSONE_GSUITE_MEET/markdown.md) |
-| Tabelle figlie           |                                                                                                                   |
+| Info                     | Descrizione                                                                                                                     |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_PERSONE_GSUITE_MEET                                                                                                       |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                                 |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_GSUITE_MEET                                                                       |
+| Descrizione tabella      |                                                                                                                                 |
+| Versione                 | 1.0                                                                                                                             |
+| Core dataset             | False                                                                                                                           |
+| Dataset di origine       |                                                                                                                                 |
+| Richiede validazione     | False                                                                                                                           |
+| Esposta in DSS           | True                                                                                                                            |
+| Endpoint DSS             | /gsuite-meet                                                                                                                    |
+| Query name DSS           | gsuite_meet                                                                                                                     |
+| Formato esposizione      | JSON                                                                                                                            |
+| Tipologia autenticazione | Bearer token                                                                                                                    |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_GSUITE_MEET](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_GSUITE_MEET/markdown.md) |
+| Tabelle figlie           |                                                                                                                                 |
 
 ## Struttura relazionale
 

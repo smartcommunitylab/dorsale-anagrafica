@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                           |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_STRUTTURE_APPLICATIVI                                                                                           |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                       |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_STRUTTURE_APPLICATIVI                                                           |
-| Descrizione tabella      |                                                                                                                       |
-| Versione                 | 1.0                                                                                                                   |
-| Core dataset             | False                                                                                                                 |
-| Dataset di origine       |                                                                                                                       |
-| Richiede validazione     | False                                                                                                                 |
-| Esposta in DSS           | True                                                                                                                  |
-| Endpoint DSS             | /applicativi-strutture                                                                                                |
-| Query name DSS           | applicativi_strutture                                                                                                 |
-| Formato esposizione      | JSON                                                                                                                  |
-| Tipologia autenticazione | Bearer token                                                                                                          |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI](/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_APPLICATIVI/markdown.md) |
-| Tabelle figlie           |                                                                                                                       |
+| Info                     | Descrizione                                                                                                                         |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_STRUTTURE_APPLICATIVI                                                                                                         |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                                     |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_STRUTTURE_APPLICATIVI                                                                         |
+| Descrizione tabella      |                                                                                                                                     |
+| Versione                 | 1.0                                                                                                                                 |
+| Core dataset             | False                                                                                                                               |
+| Dataset di origine       |                                                                                                                                     |
+| Richiede validazione     | False                                                                                                                               |
+| Esposta in DSS           | True                                                                                                                                |
+| Endpoint DSS             | /applicativi-strutture                                                                                                              |
+| Query name DSS           | applicativi_strutture                                                                                                               |
+| Formato esposizione      | JSON                                                                                                                                |
+| Tipologia autenticazione | Bearer token                                                                                                                        |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI](/Documentation/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_APPLICATIVI/markdown.md) |
+| Tabelle figlie           |                                                                                                                                     |
 
 ## Struttura relazionale
 

@@ -2,25 +2,25 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                             |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_ORARIO                                                                                                             |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                  |
-| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_ORARIO                                                                                      |
-| Descrizione tabella      |                                                                                                                                         |
-| Versione                 | 1.0                                                                                                                                     |
-| Core dataset             | False                                                                                                                                   |
-| Dataset di origine       |                                                                                                                                         |
-| Richiede validazione     | False                                                                                                                                   |
-| Esposta in DSS           | False                                                                                                                                   |
-| Endpoint DSS             |                                                                                                                                         |
-| Query name DSS           |                                                                                                                                         |
-| Formato esposizione      |                                                                                                                                         |
-| Tipologia autenticazione |                                                                                                                                         |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_ASSEGNAZIONE_ORARIO](/fbk_test1__CORE_DATASET/S1P_ASSEGNAZIONE_ORARIO/markdown.md)                         |
-|                          | [fbk_test1__CORE_DATASET.S1P_TIPO_ORARIO](/fbk_test1__CORE_DATASET/S1P_TIPO_ORARIO/markdown.md)                                         |
-|                          | [fbk_test1__MASTER_DATA.MAPPING_ENTE](/fbk_test1__MASTER_DATA/MAPPING_ENTE/markdown.md)                                                 |
-| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.PERSONA_ASSEGNAZIONE_ORARIO](/fbk_test1__VISUALIZATION_TABLES/PERSONA_ASSEGNAZIONE_ORARIO/markdown.md) |
+| Info                     | Descrizione                                                                                                                                           |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_ORARIO                                                                                                                           |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                                |
+| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_ORARIO                                                                                                    |
+| Descrizione tabella      |                                                                                                                                                       |
+| Versione                 | 1.0                                                                                                                                                   |
+| Core dataset             | False                                                                                                                                                 |
+| Dataset di origine       |                                                                                                                                                       |
+| Richiede validazione     | True                                                                                                                                                  |
+| Esposta in DSS           | False                                                                                                                                                 |
+| Endpoint DSS             |                                                                                                                                                       |
+| Query name DSS           |                                                                                                                                                       |
+| Formato esposizione      |                                                                                                                                                       |
+| Tipologia autenticazione |                                                                                                                                                       |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_ASSEGNAZIONE_ORARIO](/Documentation/fbk_test1__CORE_DATASET/S1P_ASSEGNAZIONE_ORARIO/markdown.md)                         |
+|                          | [fbk_test1__CORE_DATASET.S1P_TIPO_ORARIO](/Documentation/fbk_test1__CORE_DATASET/S1P_TIPO_ORARIO/markdown.md)                                         |
+|                          | [fbk_test1__MASTER_DATA.MAPPING_ENTE](/Documentation/fbk_test1__MASTER_DATA/MAPPING_ENTE/markdown.md)                                                 |
+| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.PERSONA_ASSEGNAZIONE_ORARIO](/Documentation/fbk_test1__VISUALIZATION_TABLES/PERSONA_ASSEGNAZIONE_ORARIO/markdown.md) |
 
 ## Struttura relazionale
 

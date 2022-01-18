@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                   |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_TOTALI_REMEDY_PC                                                                                                        |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                        |
-| Nome completo            | fbk_test1__MASTER_DATA.ASSET_TOTALI_REMEDY_PC                                                                                 |
-| Descrizione tabella      |                                                                                                                               |
-| Versione                 | 1.0                                                                                                                           |
-| Core dataset             | False                                                                                                                         |
-| Dataset di origine       |                                                                                                                               |
-| Richiede validazione     | False                                                                                                                         |
-| Esposta in DSS           | False                                                                                                                         |
-| Endpoint DSS             |                                                                                                                               |
-| Query name DSS           |                                                                                                                               |
-| Formato esposizione      |                                                                                                                               |
-| Tipologia autenticazione |                                                                                                                               |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC](/fbk_test1__MASTER_DATA/ASSET_PERSONE_REMEDY_PC/markdown.md)                 |
-|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_REMEDY_PC](/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_REMEDY_PC/markdown.md)             |
-| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_REMEDY_PC](/fbk_test1__VISUALIZATION_TABLES/ASSET_TOTALI_REMEDY_PC/markdown.md) |
+| Info                     | Descrizione                                                                                                                                 |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_TOTALI_REMEDY_PC                                                                                                                      |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                      |
+| Nome completo            | fbk_test1__MASTER_DATA.ASSET_TOTALI_REMEDY_PC                                                                                               |
+| Descrizione tabella      |                                                                                                                                             |
+| Versione                 | 1.0                                                                                                                                         |
+| Core dataset             | False                                                                                                                                       |
+| Dataset di origine       |                                                                                                                                             |
+| Richiede validazione     | True                                                                                                                                        |
+| Esposta in DSS           | False                                                                                                                                       |
+| Endpoint DSS             |                                                                                                                                             |
+| Query name DSS           |                                                                                                                                             |
+| Formato esposizione      |                                                                                                                                             |
+| Tipologia autenticazione |                                                                                                                                             |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_REMEDY_PC/markdown.md)                 |
+|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_REMEDY_PC](/Documentation/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_REMEDY_PC/markdown.md)             |
+| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_REMEDY_PC](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_TOTALI_REMEDY_PC/markdown.md) |
 
 ## Struttura relazionale
 

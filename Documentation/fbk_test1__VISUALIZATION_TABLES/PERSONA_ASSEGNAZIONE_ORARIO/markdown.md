@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                           |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_ORARIO                                                                                           |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                       |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_ASSEGNAZIONE_ORARIO                                                           |
-| Descrizione tabella      |                                                                                                                       |
-| Versione                 | 1.0                                                                                                                   |
-| Core dataset             | False                                                                                                                 |
-| Dataset di origine       |                                                                                                                       |
-| Richiede validazione     | False                                                                                                                 |
-| Esposta in DSS           | True                                                                                                                  |
-| Endpoint DSS             | /assegnazione-orario                                                                                                  |
-| Query name DSS           | assegnazione_orario                                                                                                   |
-| Formato esposizione      | JSON                                                                                                                  |
-| Tipologia autenticazione | Bearer token                                                                                                          |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_ORARIO](/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_ORARIO/markdown.md) |
-| Tabelle figlie           |                                                                                                                       |
+| Info                     | Descrizione                                                                                                                         |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_ORARIO                                                                                                         |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                                     |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_ASSEGNAZIONE_ORARIO                                                                         |
+| Descrizione tabella      |                                                                                                                                     |
+| Versione                 | 1.0                                                                                                                                 |
+| Core dataset             | False                                                                                                                               |
+| Dataset di origine       |                                                                                                                                     |
+| Richiede validazione     | False                                                                                                                               |
+| Esposta in DSS           | True                                                                                                                                |
+| Endpoint DSS             | /assegnazione-orario                                                                                                                |
+| Query name DSS           | assegnazione_orario                                                                                                                 |
+| Formato esposizione      | JSON                                                                                                                                |
+| Tipologia autenticazione | Bearer token                                                                                                                        |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_ORARIO](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_ORARIO/markdown.md) |
+| Tabelle figlie           |                                                                                                                                     |
 
 ## Struttura relazionale
 

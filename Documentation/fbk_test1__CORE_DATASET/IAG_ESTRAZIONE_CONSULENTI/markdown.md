@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                       |
-|:-------------------------|:--------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | IAG_ESTRAZIONE_CONSULENTI                                                                         |
-| Space Dremio             | fbk_test1__CORE_DATASET                                                                           |
-| Nome completo            | fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_CONSULENTI                                                 |
-| Descrizione tabella      |                                                                                                   |
-| Versione                 | 1.0                                                                                               |
-| Core dataset             | True                                                                                              |
-| Dataset di origine       | IAG                                                                                               |
-| Richiede validazione     | True                                                                                              |
-| Esposta in DSS           | False                                                                                             |
-| Endpoint DSS             |                                                                                                   |
-| Query name DSS           |                                                                                                   |
-| Formato esposizione      |                                                                                                   |
-| Tipologia autenticazione |                                                                                                   |
-| Tabelle genitrici        |                                                                                                   |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG](/fbk_test1__MASTER_DATA/ASSET_PERSONE_IAG/markdown.md) |
+| Info                     | Descrizione                                                                                                     |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | IAG_ESTRAZIONE_CONSULENTI                                                                                       |
+| Space Dremio             | fbk_test1__CORE_DATASET                                                                                         |
+| Nome completo            | fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_CONSULENTI                                                               |
+| Descrizione tabella      |                                                                                                                 |
+| Versione                 | 1.0                                                                                                             |
+| Core dataset             | True                                                                                                            |
+| Dataset di origine       | IAG                                                                                                             |
+| Richiede validazione     | True                                                                                                            |
+| Esposta in DSS           | False                                                                                                           |
+| Endpoint DSS             |                                                                                                                 |
+| Query name DSS           |                                                                                                                 |
+| Formato esposizione      |                                                                                                                 |
+| Tipologia autenticazione |                                                                                                                 |
+| Tabelle genitrici        |                                                                                                                 |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_IAG/markdown.md) |
 
 ## Struttura relazionale
 

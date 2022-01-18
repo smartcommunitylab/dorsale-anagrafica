@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                             |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_STRUTTURE_APPLICATIVI                                                                                                             |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                  |
-| Nome completo            | fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI                                                                                      |
-| Descrizione tabella      |                                                                                                                                         |
-| Versione                 | 1.0                                                                                                                                     |
-| Core dataset             | False                                                                                                                                   |
-| Dataset di origine       |                                                                                                                                         |
-| Richiede validazione     | False                                                                                                                                   |
-| Esposta in DSS           | False                                                                                                                                   |
-| Endpoint DSS             |                                                                                                                                         |
-| Query name DSS           |                                                                                                                                         |
-| Formato esposizione      |                                                                                                                                         |
-| Tipologia autenticazione |                                                                                                                                         |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.APPLICATIVI_STRUTTURE](/fbk_test1__CORE_DATASET/APPLICATIVI_STRUTTURE/markdown.md)                             |
-|                          | [fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA](/fbk_test1__MASTER_DATA/STRUTTURA_ULTIMA_STRUTTURA/markdown.md)                     |
-| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_STRUTTURE_APPLICATIVI](/fbk_test1__VISUALIZATION_TABLES/ASSET_STRUTTURE_APPLICATIVI/markdown.md) |
+| Info                     | Descrizione                                                                                                                                           |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_STRUTTURE_APPLICATIVI                                                                                                                           |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                                |
+| Nome completo            | fbk_test1__MASTER_DATA.ASSET_STRUTTURE_APPLICATIVI                                                                                                    |
+| Descrizione tabella      |                                                                                                                                                       |
+| Versione                 | 1.0                                                                                                                                                   |
+| Core dataset             | False                                                                                                                                                 |
+| Dataset di origine       |                                                                                                                                                       |
+| Richiede validazione     | True                                                                                                                                                  |
+| Esposta in DSS           | False                                                                                                                                                 |
+| Endpoint DSS             |                                                                                                                                                       |
+| Query name DSS           |                                                                                                                                                       |
+| Formato esposizione      |                                                                                                                                                       |
+| Tipologia autenticazione |                                                                                                                                                       |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.APPLICATIVI_STRUTTURE](/Documentation/fbk_test1__CORE_DATASET/APPLICATIVI_STRUTTURE/markdown.md)                             |
+|                          | [fbk_test1__MASTER_DATA.STRUTTURA_ULTIMA_STRUTTURA](/Documentation/fbk_test1__MASTER_DATA/STRUTTURA_ULTIMA_STRUTTURA/markdown.md)                     |
+| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_STRUTTURE_APPLICATIVI](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_STRUTTURE_APPLICATIVI/markdown.md) |
 
 ## Struttura relazionale
 

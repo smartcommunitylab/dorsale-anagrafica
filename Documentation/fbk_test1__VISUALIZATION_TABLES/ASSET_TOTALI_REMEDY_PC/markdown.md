@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                 |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_TOTALI_REMEDY_PC                                                                                      |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                             |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_REMEDY_PC                                                      |
-| Descrizione tabella      |                                                                                                             |
-| Versione                 | 1.0                                                                                                         |
-| Core dataset             | False                                                                                                       |
-| Dataset di origine       |                                                                                                             |
-| Richiede validazione     | False                                                                                                       |
-| Esposta in DSS           | True                                                                                                        |
-| Endpoint DSS             | /remedy-pdl-totali                                                                                          |
-| Query name DSS           | remedy_pdl                                                                                                  |
-| Formato esposizione      | JSON                                                                                                        |
-| Tipologia autenticazione | Bearer token                                                                                                |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_TOTALI_REMEDY_PC](/fbk_test1__MASTER_DATA/ASSET_TOTALI_REMEDY_PC/markdown.md) |
-| Tabelle figlie           |                                                                                                             |
+| Info                     | Descrizione                                                                                                               |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_TOTALI_REMEDY_PC                                                                                                    |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                           |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_REMEDY_PC                                                                    |
+| Descrizione tabella      |                                                                                                                           |
+| Versione                 | 1.0                                                                                                                       |
+| Core dataset             | False                                                                                                                     |
+| Dataset di origine       |                                                                                                                           |
+| Richiede validazione     | False                                                                                                                     |
+| Esposta in DSS           | True                                                                                                                      |
+| Endpoint DSS             | /remedy-pdl-totali                                                                                                        |
+| Query name DSS           | remedy_pdl                                                                                                                |
+| Formato esposizione      | JSON                                                                                                                      |
+| Tipologia autenticazione | Bearer token                                                                                                              |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_TOTALI_REMEDY_PC](/Documentation/fbk_test1__MASTER_DATA/ASSET_TOTALI_REMEDY_PC/markdown.md) |
+| Tabelle figlie           |                                                                                                                           |
 
 ## Struttura relazionale
 

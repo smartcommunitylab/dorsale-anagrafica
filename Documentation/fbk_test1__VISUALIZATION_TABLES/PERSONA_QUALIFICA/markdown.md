@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                       |
-|:-------------------------|:--------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_QUALIFICA                                                                                 |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                   |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_QUALIFICA                                                 |
-| Descrizione tabella      |                                                                                                   |
-| Versione                 | 1.0                                                                                               |
-| Core dataset             | False                                                                                             |
-| Dataset di origine       |                                                                                                   |
-| Richiede validazione     | False                                                                                             |
-| Esposta in DSS           | True                                                                                              |
-| Endpoint DSS             | /qualifica                                                                                        |
-| Query name DSS           | qualifica                                                                                         |
-| Formato esposizione      | JSON                                                                                              |
-| Tipologia autenticazione | Bearer token                                                                                      |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_QUALIFICA](/fbk_test1__MASTER_DATA/PERSONA_QUALIFICA/markdown.md) |
-| Tabelle figlie           |                                                                                                   |
+| Info                     | Descrizione                                                                                                     |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_QUALIFICA                                                                                               |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                 |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_QUALIFICA                                                               |
+| Descrizione tabella      |                                                                                                                 |
+| Versione                 | 1.0                                                                                                             |
+| Core dataset             | False                                                                                                           |
+| Dataset di origine       |                                                                                                                 |
+| Richiede validazione     | False                                                                                                           |
+| Esposta in DSS           | True                                                                                                            |
+| Endpoint DSS             | /qualifica                                                                                                      |
+| Query name DSS           | qualifica                                                                                                       |
+| Formato esposizione      | JSON                                                                                                            |
+| Tipologia autenticazione | Bearer token                                                                                                    |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_QUALIFICA](/Documentation/fbk_test1__MASTER_DATA/PERSONA_QUALIFICA/markdown.md) |
+| Tabelle figlie           |                                                                                                                 |
 
 ## Struttura relazionale
 

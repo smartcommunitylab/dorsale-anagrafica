@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                                                 |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | FONIA_FASCIA_TERMINALE                                                                                                                                      |
-| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                                                     |
-| Nome completo            | fbk_test1__CORE_DATASET.FONIA_FASCIA_TERMINALE                                                                                                              |
-| Descrizione tabella      |                                                                                                                                                             |
-| Versione                 | 1.0                                                                                                                                                         |
-| Core dataset             | True                                                                                                                                                        |
-| Dataset di origine       | FONIA                                                                                                                                                       |
-| Richiede validazione     | True                                                                                                                                                        |
-| Esposta in DSS           | False                                                                                                                                                       |
-| Endpoint DSS             |                                                                                                                                                             |
-| Query name DSS           |                                                                                                                                                             |
-| Formato esposizione      |                                                                                                                                                             |
-| Tipologia autenticazione |                                                                                                                                                             |
-| Tabelle genitrici        |                                                                                                                                                             |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI](/fbk_test1__MASTER_DATA/ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI/markdown.md)     |
-|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI](/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI/markdown.md) |
+| Info                     | Descrizione                                                                                                                                                               |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | FONIA_FASCIA_TERMINALE                                                                                                                                                    |
+| Space Dremio             | fbk_test1__CORE_DATASET                                                                                                                                                   |
+| Nome completo            | fbk_test1__CORE_DATASET.FONIA_FASCIA_TERMINALE                                                                                                                            |
+| Descrizione tabella      |                                                                                                                                                                           |
+| Versione                 | 1.0                                                                                                                                                                       |
+| Core dataset             | True                                                                                                                                                                      |
+| Dataset di origine       | FONIA                                                                                                                                                                     |
+| Richiede validazione     | True                                                                                                                                                                      |
+| Esposta in DSS           | False                                                                                                                                                                     |
+| Endpoint DSS             |                                                                                                                                                                           |
+| Query name DSS           |                                                                                                                                                                           |
+| Formato esposizione      |                                                                                                                                                                           |
+| Tipologia autenticazione |                                                                                                                                                                           |
+| Tabelle genitrici        |                                                                                                                                                                           |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_ASSOCIAZIONE_TERMINALI_NOLEGGI/markdown.md)     |
+|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI](/Documentation/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_ASSOCIAZIONE_TERMINALI_NOLEGGI/markdown.md) |
 
 ## Struttura relazionale
 

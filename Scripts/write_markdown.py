@@ -43,7 +43,7 @@ def format_md_table_link(string: str) -> str:
     if match:
         space = match.group(1)
         table = match.group(2)
-        return f"[{space}.{table}](/{space}/{table}/markdown.md)"
+        return f"[{space}.{table}](/Documentation/{space}/{table}/markdown.md)"
     return string
 
 

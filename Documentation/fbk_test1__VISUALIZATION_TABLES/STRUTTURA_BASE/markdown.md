@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                 |
-|:-------------------------|:--------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | STRUTTURA_BASE                                                                              |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                             |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.STRUTTURA_BASE                                              |
-| Descrizione tabella      |                                                                                             |
-| Versione                 | 1.0                                                                                         |
-| Core dataset             | False                                                                                       |
-| Dataset di origine       |                                                                                             |
-| Richiede validazione     | False                                                                                       |
-| Esposta in DSS           | True                                                                                        |
-| Endpoint DSS             | /organigramma                                                                               |
-| Query name DSS           | strutture_base                                                                              |
-| Formato esposizione      | JSON                                                                                        |
-| Tipologia autenticazione | Bearer token                                                                                |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.STRUTTURA_BASE](/fbk_test1__MASTER_DATA/STRUTTURA_BASE/markdown.md) |
-| Tabelle figlie           |                                                                                             |
+| Info                     | Descrizione                                                                                               |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | STRUTTURA_BASE                                                                                            |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                           |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.STRUTTURA_BASE                                                            |
+| Descrizione tabella      |                                                                                                           |
+| Versione                 | 1.0                                                                                                       |
+| Core dataset             | False                                                                                                     |
+| Dataset di origine       |                                                                                                           |
+| Richiede validazione     | False                                                                                                     |
+| Esposta in DSS           | True                                                                                                      |
+| Endpoint DSS             | /organigramma                                                                                             |
+| Query name DSS           | strutture_base                                                                                            |
+| Formato esposizione      | JSON                                                                                                      |
+| Tipologia autenticazione | Bearer token                                                                                              |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.STRUTTURA_BASE](/Documentation/fbk_test1__MASTER_DATA/STRUTTURA_BASE/markdown.md) |
+| Tabelle figlie           |                                                                                                           |
 
 ## Struttura relazionale
 

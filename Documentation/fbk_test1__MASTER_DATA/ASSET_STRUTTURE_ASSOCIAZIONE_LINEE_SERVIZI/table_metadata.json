@@ -18,7 +18,7 @@
   ],
   "core_dataset": false,
   "origin_dataset": "",
-  "require_validation": false,
+  "require_validation": true,
   "dss_exposed": false,
   "dss_query_name": "",
   "dss_endpoint": "",

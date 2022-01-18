@@ -2,25 +2,25 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                           |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_ANAGRAFICA                                                                                                    |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                |
-| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA                                                                             |
-| Descrizione tabella      |                                                                                                                       |
-| Versione                 | 1.0                                                                                                                   |
-| Core dataset             | False                                                                                                                 |
-| Dataset di origine       |                                                                                                                       |
-| Richiede validazione     | False                                                                                                                 |
-| Esposta in DSS           | False                                                                                                                 |
-| Endpoint DSS             |                                                                                                                       |
-| Query name DSS           |                                                                                                                       |
-| Formato esposizione      |                                                                                                                       |
-| Tipologia autenticazione |                                                                                                                       |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA](/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_FONIA/markdown.md)       |
-|                          | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE](/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_RCE/markdown.md)           |
-|                          | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_S1P](/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_S1P/markdown.md)           |
-| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.PERSONA_ANAGRAFICA](/fbk_test1__VISUALIZATION_TABLES/PERSONA_ANAGRAFICA/markdown.md) |
+| Info                     | Descrizione                                                                                                                         |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_ANAGRAFICA                                                                                                                  |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                              |
+| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA                                                                                           |
+| Descrizione tabella      |                                                                                                                                     |
+| Versione                 | 1.0                                                                                                                                 |
+| Core dataset             | False                                                                                                                               |
+| Dataset di origine       |                                                                                                                                     |
+| Richiede validazione     | True                                                                                                                                |
+| Esposta in DSS           | False                                                                                                                               |
+| Endpoint DSS             |                                                                                                                                     |
+| Query name DSS           |                                                                                                                                     |
+| Formato esposizione      |                                                                                                                                     |
+| Tipologia autenticazione |                                                                                                                                     |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_FONIA](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_FONIA/markdown.md)       |
+|                          | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_RCE](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_RCE/markdown.md)           |
+|                          | [fbk_test1__MASTER_DATA.PERSONA_ANAGRAFICA_S1P](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ANAGRAFICA_S1P/markdown.md)           |
+| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.PERSONA_ANAGRAFICA](/Documentation/fbk_test1__VISUALIZATION_TABLES/PERSONA_ANAGRAFICA/markdown.md) |
 
 ## Struttura relazionale
 

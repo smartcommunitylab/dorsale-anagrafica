@@ -2,25 +2,25 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                         |
-|:-------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_PERSONE_IAG                                                                                                   |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                              |
-| Nome completo            | fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG                                                                            |
-| Descrizione tabella      |                                                                                                                     |
-| Versione                 | 1.0                                                                                                                 |
-| Core dataset             | False                                                                                                               |
-| Dataset di origine       |                                                                                                                     |
-| Richiede validazione     | False                                                                                                               |
-| Esposta in DSS           | False                                                                                                               |
-| Endpoint DSS             |                                                                                                                     |
-| Query name DSS           |                                                                                                                     |
-| Formato esposizione      |                                                                                                                     |
-| Tipologia autenticazione |                                                                                                                     |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.IAG_APPLICAZIONI](/fbk_test1__CORE_DATASET/IAG_APPLICAZIONI/markdown.md)                   |
-|                          | [fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_CONSULENTI](/fbk_test1__CORE_DATASET/IAG_ESTRAZIONE_CONSULENTI/markdown.md) |
-|                          | [fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_PAT](/fbk_test1__CORE_DATASET/IAG_ESTRAZIONE_PAT/markdown.md)               |
-| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_IAG](/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_IAG/markdown.md) |
+| Info                     | Descrizione                                                                                                                       |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_PERSONE_IAG                                                                                                                 |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                            |
+| Nome completo            | fbk_test1__MASTER_DATA.ASSET_PERSONE_IAG                                                                                          |
+| Descrizione tabella      |                                                                                                                                   |
+| Versione                 | 1.0                                                                                                                               |
+| Core dataset             | False                                                                                                                             |
+| Dataset di origine       |                                                                                                                                   |
+| Richiede validazione     | True                                                                                                                              |
+| Esposta in DSS           | False                                                                                                                             |
+| Endpoint DSS             |                                                                                                                                   |
+| Query name DSS           |                                                                                                                                   |
+| Formato esposizione      |                                                                                                                                   |
+| Tipologia autenticazione |                                                                                                                                   |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.IAG_APPLICAZIONI](/Documentation/fbk_test1__CORE_DATASET/IAG_APPLICAZIONI/markdown.md)                   |
+|                          | [fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_CONSULENTI](/Documentation/fbk_test1__CORE_DATASET/IAG_ESTRAZIONE_CONSULENTI/markdown.md) |
+|                          | [fbk_test1__CORE_DATASET.IAG_ESTRAZIONE_PAT](/Documentation/fbk_test1__CORE_DATASET/IAG_ESTRAZIONE_PAT/markdown.md)               |
+| Tabelle figlie           | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_IAG](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_IAG/markdown.md) |
 
 ## Struttura relazionale
 

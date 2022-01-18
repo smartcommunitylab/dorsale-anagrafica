@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                       |
-|:-------------------------|:--------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | S1P_CONTRATTO                                                                                     |
-| Space Dremio             | fbk_test1__CORE_DATASET                                                                           |
-| Nome completo            | fbk_test1__CORE_DATASET.S1P_CONTRATTO                                                             |
-| Descrizione tabella      |                                                                                                   |
-| Versione                 | 1.0                                                                                               |
-| Core dataset             | True                                                                                              |
-| Dataset di origine       | S1P                                                                                               |
-| Richiede validazione     | True                                                                                              |
-| Esposta in DSS           | False                                                                                             |
-| Endpoint DSS             |                                                                                                   |
-| Query name DSS           |                                                                                                   |
-| Formato esposizione      |                                                                                                   |
-| Tipologia autenticazione |                                                                                                   |
-| Tabelle genitrici        |                                                                                                   |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_CONTRATTO](/fbk_test1__MASTER_DATA/PERSONA_CONTRATTO/markdown.md) |
+| Info                     | Descrizione                                                                                                     |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | S1P_CONTRATTO                                                                                                   |
+| Space Dremio             | fbk_test1__CORE_DATASET                                                                                         |
+| Nome completo            | fbk_test1__CORE_DATASET.S1P_CONTRATTO                                                                           |
+| Descrizione tabella      |                                                                                                                 |
+| Versione                 | 1.0                                                                                                             |
+| Core dataset             | True                                                                                                            |
+| Dataset di origine       | S1P                                                                                                             |
+| Richiede validazione     | True                                                                                                            |
+| Esposta in DSS           | False                                                                                                           |
+| Endpoint DSS             |                                                                                                                 |
+| Query name DSS           |                                                                                                                 |
+| Formato esposizione      |                                                                                                                 |
+| Tipologia autenticazione |                                                                                                                 |
+| Tabelle genitrici        |                                                                                                                 |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_CONTRATTO](/Documentation/fbk_test1__MASTER_DATA/PERSONA_CONTRATTO/markdown.md) |
 
 ## Struttura relazionale
 

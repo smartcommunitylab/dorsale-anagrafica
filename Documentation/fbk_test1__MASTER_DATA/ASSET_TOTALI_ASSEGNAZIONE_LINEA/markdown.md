@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                         |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_TOTALI_ASSEGNAZIONE_LINEA                                                                                                     |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                              |
-| Nome completo            | fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSEGNAZIONE_LINEA                                                                              |
-| Descrizione tabella      |                                                                                                                                     |
-| Versione                 | 1.0                                                                                                                                 |
-| Core dataset             | False                                                                                                                               |
-| Dataset di origine       |                                                                                                                                     |
-| Richiede validazione     | False                                                                                                                               |
-| Esposta in DSS           | False                                                                                                                               |
-| Endpoint DSS             |                                                                                                                                     |
-| Query name DSS           |                                                                                                                                     |
-| Formato esposizione      |                                                                                                                                     |
-| Tipologia autenticazione |                                                                                                                                     |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA](/fbk_test1__MASTER_DATA/ASSET_PERSONE_ASSEGNAZIONE_LINEA/markdown.md)     |
-|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_LINEA](/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_ASSEGNAZIONE_LINEA/markdown.md) |
-| Tabelle figlie           |                                                                                                                                     |
+| Info                     | Descrizione                                                                                                                                       |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_TOTALI_ASSEGNAZIONE_LINEA                                                                                                                   |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                            |
+| Nome completo            | fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSEGNAZIONE_LINEA                                                                                            |
+| Descrizione tabella      |                                                                                                                                                   |
+| Versione                 | 1.0                                                                                                                                               |
+| Core dataset             | False                                                                                                                                             |
+| Dataset di origine       |                                                                                                                                                   |
+| Richiede validazione     | True                                                                                                                                              |
+| Esposta in DSS           | False                                                                                                                                             |
+| Endpoint DSS             |                                                                                                                                                   |
+| Query name DSS           |                                                                                                                                                   |
+| Formato esposizione      |                                                                                                                                                   |
+| Tipologia autenticazione |                                                                                                                                                   |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_ASSEGNAZIONE_LINEA/markdown.md)     |
+|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSEGNAZIONE_LINEA](/Documentation/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_ASSEGNAZIONE_LINEA/markdown.md) |
+| Tabelle figlie           |                                                                                                                                                   |
 
 ## Struttura relazionale
 

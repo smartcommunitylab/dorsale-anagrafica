@@ -2,30 +2,30 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                                       |
-|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_PERSONE_ASSEGNAZIONE_LINEA                                                                                                                  |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                            |
-| Nome completo            | fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA                                                                                           |
-| Descrizione tabella      |                                                                                                                                                   |
-| Versione                 | 1.0                                                                                                                                               |
-| Core dataset             | False                                                                                                                                             |
-| Dataset di origine       |                                                                                                                                                   |
-| Richiede validazione     | False                                                                                                                                             |
-| Esposta in DSS           | False                                                                                                                                             |
-| Endpoint DSS             |                                                                                                                                                   |
-| Query name DSS           |                                                                                                                                                   |
-| Formato esposizione      |                                                                                                                                                   |
-| Tipologia autenticazione |                                                                                                                                                   |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.FONIA_GRUPPO](/fbk_test1__CORE_DATASET/FONIA_GRUPPO/markdown.md)                                                         |
-|                          | [fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA](/fbk_test1__CORE_DATASET/FONIA_LINEA_ASSEGNATA/markdown.md)                                       |
-|                          | [fbk_test1__CORE_DATASET.FONIA_PERSONA](/fbk_test1__CORE_DATASET/FONIA_PERSONA/markdown.md)                                                       |
-|                          | [fbk_test1__CORE_DATASET.FONIA_STRUTTURA](/fbk_test1__CORE_DATASET/FONIA_STRUTTURA/markdown.md)                                                   |
-|                          | [fbk_test1__CORE_DATASET.FONIA_TIPOLOGIA_LINEA](/fbk_test1__CORE_DATASET/FONIA_TIPOLOGIA_LINEA/markdown.md)                                       |
-|                          | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA](/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA/markdown.md)                       |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSEGNAZIONE_LINEA](/fbk_test1__MASTER_DATA/ASSET_TOTALI_ASSEGNAZIONE_LINEA/markdown.md)                     |
-|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_ASSEGNAZIONE_LINEA](/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_ASSEGNAZIONE_LINEA/markdown.md) |
-|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSEGNAZIONE_LINEA](/fbk_test1__VISUALIZATION_TABLES/ASSET_TOTALI_ASSEGNAZIONE_LINEA/markdown.md)   |
+| Info                     | Descrizione                                                                                                                                                     |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_PERSONE_ASSEGNAZIONE_LINEA                                                                                                                                |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                                          |
+| Nome completo            | fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSEGNAZIONE_LINEA                                                                                                         |
+| Descrizione tabella      |                                                                                                                                                                 |
+| Versione                 | 1.0                                                                                                                                                             |
+| Core dataset             | False                                                                                                                                                           |
+| Dataset di origine       |                                                                                                                                                                 |
+| Richiede validazione     | True                                                                                                                                                            |
+| Esposta in DSS           | False                                                                                                                                                           |
+| Endpoint DSS             |                                                                                                                                                                 |
+| Query name DSS           |                                                                                                                                                                 |
+| Formato esposizione      |                                                                                                                                                                 |
+| Tipologia autenticazione |                                                                                                                                                                 |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.FONIA_GRUPPO](/Documentation/fbk_test1__CORE_DATASET/FONIA_GRUPPO/markdown.md)                                                         |
+|                          | [fbk_test1__CORE_DATASET.FONIA_LINEA_ASSEGNATA](/Documentation/fbk_test1__CORE_DATASET/FONIA_LINEA_ASSEGNATA/markdown.md)                                       |
+|                          | [fbk_test1__CORE_DATASET.FONIA_PERSONA](/Documentation/fbk_test1__CORE_DATASET/FONIA_PERSONA/markdown.md)                                                       |
+|                          | [fbk_test1__CORE_DATASET.FONIA_STRUTTURA](/Documentation/fbk_test1__CORE_DATASET/FONIA_STRUTTURA/markdown.md)                                                   |
+|                          | [fbk_test1__CORE_DATASET.FONIA_TIPOLOGIA_LINEA](/Documentation/fbk_test1__CORE_DATASET/FONIA_TIPOLOGIA_LINEA/markdown.md)                                       |
+|                          | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA/markdown.md)                       |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_TOTALI_ASSEGNAZIONE_LINEA](/Documentation/fbk_test1__MASTER_DATA/ASSET_TOTALI_ASSEGNAZIONE_LINEA/markdown.md)                     |
+|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_ASSEGNAZIONE_LINEA](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_PERSONE_ASSEGNAZIONE_LINEA/markdown.md) |
+|                          | [fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSEGNAZIONE_LINEA](/Documentation/fbk_test1__VISUALIZATION_TABLES/ASSET_TOTALI_ASSEGNAZIONE_LINEA/markdown.md)   |
 
 ## Struttura relazionale
 

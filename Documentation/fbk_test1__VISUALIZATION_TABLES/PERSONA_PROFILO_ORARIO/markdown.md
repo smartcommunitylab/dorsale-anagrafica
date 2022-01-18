@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                           |
-|:-------------------------|:------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_PROFILO_ORARIO                                                                                |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                       |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_PROFILO_ORARIO                                                |
-| Descrizione tabella      |                                                                                                       |
-| Versione                 | 1.0                                                                                                   |
-| Core dataset             | False                                                                                                 |
-| Dataset di origine       |                                                                                                       |
-| Richiede validazione     | False                                                                                                 |
-| Esposta in DSS           | True                                                                                                  |
-| Endpoint DSS             | /profilo-orario                                                                                       |
-| Query name DSS           | profilo_orario                                                                                        |
-| Formato esposizione      | JSON                                                                                                  |
-| Tipologia autenticazione | Bearer token                                                                                          |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_PROFILO_ORARIO](/fbk_test1__CORE_DATASET/S1P_PROFILO_ORARIO/markdown.md) |
-| Tabelle figlie           |                                                                                                       |
+| Info                     | Descrizione                                                                                                         |
+|:-------------------------|:--------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_PROFILO_ORARIO                                                                                              |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                     |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.PERSONA_PROFILO_ORARIO                                                              |
+| Descrizione tabella      |                                                                                                                     |
+| Versione                 | 1.0                                                                                                                 |
+| Core dataset             | False                                                                                                               |
+| Dataset di origine       |                                                                                                                     |
+| Richiede validazione     | False                                                                                                               |
+| Esposta in DSS           | True                                                                                                                |
+| Endpoint DSS             | /profilo-orario                                                                                                     |
+| Query name DSS           | profilo_orario                                                                                                      |
+| Formato esposizione      | JSON                                                                                                                |
+| Tipologia autenticazione | Bearer token                                                                                                        |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_PROFILO_ORARIO](/Documentation/fbk_test1__CORE_DATASET/S1P_PROFILO_ORARIO/markdown.md) |
+| Tabelle figlie           |                                                                                                                     |
 
 ## Struttura relazionale
 

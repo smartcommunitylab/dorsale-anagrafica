@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                 |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE                                                                          |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                      |
-| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE                                                   |
-| Descrizione tabella      |                                                                                                                             |
-| Versione                 | 1.0                                                                                                                         |
-| Core dataset             | False                                                                                                                       |
-| Dataset di origine       |                                                                                                                             |
-| Richiede validazione     | False                                                                                                                       |
-| Esposta in DSS           | False                                                                                                                       |
-| Endpoint DSS             |                                                                                                                             |
-| Query name DSS           |                                                                                                                             |
-| Formato esposizione      |                                                                                                                             |
-| Tipologia autenticazione |                                                                                                                             |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA](/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA/markdown.md) |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC](/fbk_test1__MASTER_DATA/ASSET_PERSONE_REMEDY_PC/markdown.md)               |
+| Info                     | Descrizione                                                                                                                               |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE                                                                                        |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                    |
+| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_ULTIMA_ASSEGNAZIONE                                                                 |
+| Descrizione tabella      |                                                                                                                                           |
+| Versione                 | 1.0                                                                                                                                       |
+| Core dataset             | False                                                                                                                                     |
+| Dataset di origine       |                                                                                                                                           |
+| Richiede validazione     | True                                                                                                                                      |
+| Esposta in DSS           | False                                                                                                                                     |
+| Endpoint DSS             |                                                                                                                                           |
+| Query name DSS           |                                                                                                                                           |
+| Formato esposizione      |                                                                                                                                           |
+| Tipologia autenticazione |                                                                                                                                           |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA/markdown.md) |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.ASSET_PERSONE_REMEDY_PC](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_REMEDY_PC/markdown.md)               |
 
 ## Struttura relazionale
 

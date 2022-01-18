@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                             |
-|:-------------------------|:----------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | MAPPING_CODICE_STATO_MAIL                                                               |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                  |
-| Nome completo            | fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL                                        |
-| Descrizione tabella      |                                                                                         |
-| Versione                 | 1.0                                                                                     |
-| Core dataset             | False                                                                                   |
-| Dataset di origine       |                                                                                         |
-| Richiede validazione     | False                                                                                   |
-| Esposta in DSS           | False                                                                                   |
-| Endpoint DSS             |                                                                                         |
-| Query name DSS           |                                                                                         |
-| Formato esposizione      |                                                                                         |
-| Tipologia autenticazione |                                                                                         |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_MAIL](/fbk_test1__CORE_DATASET/S1P_MAIL/markdown.md)       |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_MAIL](/fbk_test1__MASTER_DATA/PERSONA_MAIL/markdown.md) |
+| Info                     | Descrizione                                                                                           |
+|:-------------------------|:------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | MAPPING_CODICE_STATO_MAIL                                                                             |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                |
+| Nome completo            | fbk_test1__MASTER_DATA.MAPPING_CODICE_STATO_MAIL                                                      |
+| Descrizione tabella      |                                                                                                       |
+| Versione                 | 1.0                                                                                                   |
+| Core dataset             | False                                                                                                 |
+| Dataset di origine       |                                                                                                       |
+| Richiede validazione     | True                                                                                                  |
+| Esposta in DSS           | False                                                                                                 |
+| Endpoint DSS             |                                                                                                       |
+| Query name DSS           |                                                                                                       |
+| Formato esposizione      |                                                                                                       |
+| Tipologia autenticazione |                                                                                                       |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.S1P_MAIL](/Documentation/fbk_test1__CORE_DATASET/S1P_MAIL/markdown.md)       |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_MAIL](/Documentation/fbk_test1__MASTER_DATA/PERSONA_MAIL/markdown.md) |
 
 ## Struttura relazionale
 

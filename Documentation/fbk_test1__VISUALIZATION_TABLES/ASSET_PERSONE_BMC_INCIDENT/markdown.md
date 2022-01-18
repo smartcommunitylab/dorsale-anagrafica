@@ -2,23 +2,23 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                         |
-|:-------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_PERSONE_BMC_INCIDENT                                                                                          |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                     |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_BMC_INCIDENT                                                          |
-| Descrizione tabella      |                                                                                                                     |
-| Versione                 | 1.0                                                                                                                 |
-| Core dataset             | False                                                                                                               |
-| Dataset di origine       |                                                                                                                     |
-| Richiede validazione     | False                                                                                                               |
-| Esposta in DSS           | True                                                                                                                |
-| Endpoint DSS             | /bmc-incident                                                                                                       |
-| Query name DSS           | bmc_incident                                                                                                        |
-| Formato esposizione      | JSON                                                                                                                |
-| Tipologia autenticazione | Bearer token                                                                                                        |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_BMC_INCIDENT](/fbk_test1__MASTER_DATA/ASSET_PERSONE_BMC_INCIDENT/markdown.md) |
-| Tabelle figlie           |                                                                                                                     |
+| Info                     | Descrizione                                                                                                                       |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_PERSONE_BMC_INCIDENT                                                                                                        |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                                   |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_PERSONE_BMC_INCIDENT                                                                        |
+| Descrizione tabella      |                                                                                                                                   |
+| Versione                 | 1.0                                                                                                                               |
+| Core dataset             | False                                                                                                                             |
+| Dataset di origine       |                                                                                                                                   |
+| Richiede validazione     | False                                                                                                                             |
+| Esposta in DSS           | True                                                                                                                              |
+| Endpoint DSS             | /bmc-incident                                                                                                                     |
+| Query name DSS           | bmc_incident                                                                                                                      |
+| Formato esposizione      | JSON                                                                                                                              |
+| Tipologia autenticazione | Bearer token                                                                                                                      |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_BMC_INCIDENT](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_BMC_INCIDENT/markdown.md) |
+| Tabelle figlie           |                                                                                                                                   |
 
 ## Struttura relazionale
 

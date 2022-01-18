@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                                         |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI                                                                                                             |
-| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                                                     |
-| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI                                                                             |
-| Descrizione tabella      |                                                                                                                                                     |
-| Versione                 | 1.0                                                                                                                                                 |
-| Core dataset             | False                                                                                                                                               |
-| Dataset di origine       |                                                                                                                                                     |
-| Richiede validazione     | False                                                                                                                                               |
-| Esposta in DSS           | True                                                                                                                                                |
-| Endpoint DSS             | /asset-totali-associazione-linee-servizi                                                                                                            |
-| Query name DSS           | asset_totali_associazione_linee_servizi                                                                                                             |
-| Formato esposizione      | JSON                                                                                                                                                |
-| Tipologia autenticazione | Bearer token                                                                                                                                        |
-| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI](/fbk_test1__MASTER_DATA/ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md)     |
-|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI](/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md) |
-| Tabelle figlie           |                                                                                                                                                     |
+| Info                     | Descrizione                                                                                                                                                       |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI                                                                                                                           |
+| Space Dremio             | fbk_test1__VISUALIZATION_TABLES                                                                                                                                   |
+| Nome completo            | fbk_test1__VISUALIZATION_TABLES.ASSET_TOTALI_ASSOCIAZIONE_LINEE_SERVIZI                                                                                           |
+| Descrizione tabella      |                                                                                                                                                                   |
+| Versione                 | 1.0                                                                                                                                                               |
+| Core dataset             | False                                                                                                                                                             |
+| Dataset di origine       |                                                                                                                                                                   |
+| Richiede validazione     | False                                                                                                                                                             |
+| Esposta in DSS           | True                                                                                                                                                              |
+| Endpoint DSS             | /asset-totali-associazione-linee-servizi                                                                                                                          |
+| Query name DSS           | asset_totali_associazione_linee_servizi                                                                                                                           |
+| Formato esposizione      | JSON                                                                                                                                                              |
+| Tipologia autenticazione | Bearer token                                                                                                                                                      |
+| Tabelle genitrici        | [fbk_test1__MASTER_DATA.ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI](/Documentation/fbk_test1__MASTER_DATA/ASSET_PERSONE_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md)     |
+|                          | [fbk_test1__MASTER_DATA.ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI](/Documentation/fbk_test1__MASTER_DATA/ASSET_STRUTTURE_ASSOCIAZIONE_LINEE_SERVIZI/markdown.md) |
+| Tabelle figlie           |                                                                                                                                                                   |
 
 ## Struttura relazionale
 

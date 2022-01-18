@@ -2,24 +2,24 @@
 
 ## Info tabella
 
-| Info                     | Descrizione                                                                                                                 |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------|
-| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_STRUTTURA_RCE                                                                                          |
-| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                      |
-| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE                                                                   |
-| Descrizione tabella      |                                                                                                                             |
-| Versione                 | 1.0                                                                                                                         |
-| Core dataset             | False                                                                                                                       |
-| Dataset di origine       |                                                                                                                             |
-| Richiede validazione     | False                                                                                                                       |
-| Esposta in DSS           | False                                                                                                                       |
-| Endpoint DSS             |                                                                                                                             |
-| Query name DSS           |                                                                                                                             |
-| Formato esposizione      |                                                                                                                             |
-| Tipologia autenticazione |                                                                                                                             |
-| Tabelle genitrici        | [fbk_test1__CORE_DATASET.RCE_ANAGRAFICA](/fbk_test1__CORE_DATASET/RCE_ANAGRAFICA/markdown.md)                               |
-|                          | [fbk_test1__MASTER_DATA.MAPPING_ENTE](/fbk_test1__MASTER_DATA/MAPPING_ENTE/markdown.md)                                     |
-| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA](/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA/markdown.md) |
+| Info                     | Descrizione                                                                                                                               |
+|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome tabella Dremio      | PERSONA_ASSEGNAZIONE_STRUTTURA_RCE                                                                                                        |
+| Space Dremio             | fbk_test1__MASTER_DATA                                                                                                                    |
+| Nome completo            | fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA_RCE                                                                                 |
+| Descrizione tabella      |                                                                                                                                           |
+| Versione                 | 1.0                                                                                                                                       |
+| Core dataset             | False                                                                                                                                     |
+| Dataset di origine       |                                                                                                                                           |
+| Richiede validazione     | True                                                                                                                                      |
+| Esposta in DSS           | False                                                                                                                                     |
+| Endpoint DSS             |                                                                                                                                           |
+| Query name DSS           |                                                                                                                                           |
+| Formato esposizione      |                                                                                                                                           |
+| Tipologia autenticazione |                                                                                                                                           |
+| Tabelle genitrici        | [fbk_test1__CORE_DATASET.RCE_ANAGRAFICA](/Documentation/fbk_test1__CORE_DATASET/RCE_ANAGRAFICA/markdown.md)                               |
+|                          | [fbk_test1__MASTER_DATA.MAPPING_ENTE](/Documentation/fbk_test1__MASTER_DATA/MAPPING_ENTE/markdown.md)                                     |
+| Tabelle figlie           | [fbk_test1__MASTER_DATA.PERSONA_ASSEGNAZIONE_STRUTTURA](/Documentation/fbk_test1__MASTER_DATA/PERSONA_ASSEGNAZIONE_STRUTTURA/markdown.md) |
 
 ## Struttura relazionale
 

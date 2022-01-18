@@ -16,7 +16,8 @@ DREMIO_DRIVER = "Dremio ODBC Driver 64-bit"
 # Extraction functions
 #
 def parse_dss_xml(path: str,
-                  prefix: str) -> pd.DataFrame:
+                  prefix: str,
+                  visual: str) -> pd.DataFrame:
     """
     Parse the DSS configuration file
     """
@@ -46,7 +47,7 @@ def parse_dss_xml(path: str,
         }
 
         if all(d.values()):
-            if re.match("^fbk_test1__VISUALIZATION_TABLES.*", table):
+            if re.match(f"^{visual}.*", table):
                 l.append(d)
 
     return pd.DataFrame(l)
@@ -106,7 +107,11 @@ def extract_raw_schema(cnxn: pyodbc.Connection,
     return df
 
 
-def enrich_df(df, prefix):
+def enrich_df(df, 
+              prefix,
+              core,
+              master,
+              visual):
     """
     Enrich the dataframe with information.
     """
@@ -115,14 +120,14 @@ def enrich_df(df, prefix):
     df["table_version"] = "1.0"
 
     # Validation section
-    df["core_dataset"] = df["table_space"].apply(lambda x: x == "fbk_test1__CORE_DATASET")
-    df["require_validation"] = df["table_space"].apply(lambda x: x == "fbk_test1__CORE_DATASET")
-    df["origin_dataset"] = df.apply(lambda x: x["table_name"].split("_")[0] if x["table_space"] == "fbk_test1__CORE_DATASET" else "", axis=1)
+    df["core_dataset"] = df["table_space"].apply(lambda x: x == core)
+    df["require_validation"] = df["table_space"].apply(lambda x: x in (core, master))
+    df["origin_dataset"] = df.apply(lambda x: x["table_name"].split("_")[0] if x["table_space"] == core else "", axis=1)
 
     # Data exposition section
-    df["dss_exposed"] = df["table_space"].apply(lambda x: x == "fbk_test1__VISUALIZATION_TABLES")
-    df["format_exposed"] = df["table_space"].apply(lambda x: "JSON" if x == "fbk_test1__VISUALIZATION_TABLES" else "")
-    df["format_authentication"] = df["table_space"].apply(lambda x: "Bearer token" if x == "fbk_test1__VISUALIZATION_TABLES" else "")
+    df["dss_exposed"] = df["table_space"].apply(lambda x: x == visual)
+    df["format_exposed"] = df["table_space"].apply(lambda x: "JSON" if x == visual else "")
+    df["format_authentication"] = df["table_space"].apply(lambda x: "Bearer token" if x == visual else "")
 
     # Data genealogy
     df["table_parents"] = df["table_definition"].apply(return_parents, prefix=prefix)
@@ -238,7 +243,7 @@ def main(**kwargs):
     prefix = kwargs["prefix"]
 
     # Parse the xml dss configuration
-    dss = parse_dss_xml(xml_path, prefix)
+    dss = parse_dss_xml(xml_path, prefix, visual)
 
     # Extract table metadata
     viw = extract_metadata(cnxn, (core, master, visual))
@@ -251,7 +256,7 @@ def main(**kwargs):
     df.fillna("", inplace=True)
 
     # Enrich tables metadata
-    df = enrich_df(df, prefix)
+    df = enrich_df(df, prefix, core, master, visual)
 
     # Reordering columns
     df = df[["table_space",
